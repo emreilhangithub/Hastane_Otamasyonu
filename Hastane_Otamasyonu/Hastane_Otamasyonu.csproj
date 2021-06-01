@@ -52,6 +52,12 @@
     <Compile Include="FrmGirisler.Designer.cs">
       <DependentUpon>FrmGirisler.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmHastaDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHastaDetay.Designer.cs">
+      <DependentUpon>FrmHastaDetay.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHastaGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmGirisler.resx">
       <DependentUpon>FrmGirisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHastaDetay.resx">
+      <DependentUpon>FrmHastaDetay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHastaGiris.resx">
       <DependentUpon>FrmHastaGiris.cs</DependentUpon>
