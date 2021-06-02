@@ -32,8 +32,8 @@ namespace Hastane_Otamasyonu
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHastaGiris));
             this.LnkUyeOl = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
-            this.TxtSifre = new System.Windows.Forms.MaskedTextBox();
             this.MskTc = new System.Windows.Forms.MaskedTextBox();
+            this.TxtSifre = new System.Windows.Forms.MaskedTextBox();
             this.BtnGirisYap = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,21 +60,23 @@ namespace Hastane_Otamasyonu
             this.label4.TabIndex = 15;
             this.label4.Text = "Hasta Giriş Paneli";
             // 
-            // TxtSifre
-            // 
-            this.TxtSifre.Location = new System.Drawing.Point(297, 201);
-            this.TxtSifre.Mask = "00000000000";
-            this.TxtSifre.Name = "TxtSifre";
-            this.TxtSifre.Size = new System.Drawing.Size(234, 42);
-            this.TxtSifre.TabIndex = 27;
-            this.TxtSifre.ValidatingType = typeof(int);
-            // 
             // MskTc
             // 
             this.MskTc.Location = new System.Drawing.Point(297, 135);
+            this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
             this.MskTc.Size = new System.Drawing.Size(234, 42);
-            this.MskTc.TabIndex = 26;
+            this.MskTc.TabIndex = 27;
+            this.MskTc.UseWaitCursor = true;
+            this.MskTc.ValidatingType = typeof(int);
+            // 
+            // TxtSifre
+            // 
+            this.TxtSifre.Location = new System.Drawing.Point(297, 205);
+            this.TxtSifre.Name = "TxtSifre";
+            this.TxtSifre.Size = new System.Drawing.Size(234, 42);
+            this.TxtSifre.TabIndex = 26;
+            this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // BtnGirisYap
             // 
@@ -112,8 +114,8 @@ namespace Hastane_Otamasyonu
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(665, 345);
-            this.Controls.Add(this.TxtSifre);
             this.Controls.Add(this.MskTc);
+            this.Controls.Add(this.TxtSifre);
             this.Controls.Add(this.BtnGirisYap);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -133,8 +135,8 @@ namespace Hastane_Otamasyonu
         #endregion
         private System.Windows.Forms.LinkLabel LnkUyeOl;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox TxtSifre;
         private System.Windows.Forms.MaskedTextBox MskTc;
+        private System.Windows.Forms.MaskedTextBox TxtSifre;
         private System.Windows.Forms.Button BtnGirisYap;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

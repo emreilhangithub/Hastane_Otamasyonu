@@ -29,56 +29,13 @@ namespace Hastane_Otamasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            this.TxtSifre = new System.Windows.Forms.MaskedTextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.MskTc = new System.Windows.Forms.MaskedTextBox();
+            this.TxtSifre = new System.Windows.Forms.MaskedTextBox();
             this.BtnGirisYap = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // TxtSifre
-            // 
-            this.TxtSifre.Location = new System.Drawing.Point(265, 198);
-            this.TxtSifre.Mask = "00000000000";
-            this.TxtSifre.Name = "TxtSifre";
-            this.TxtSifre.Size = new System.Drawing.Size(234, 42);
-            this.TxtSifre.TabIndex = 39;
-            this.TxtSifre.ValidatingType = typeof(int);
-            // 
-            // MskTc
-            // 
-            this.MskTc.Location = new System.Drawing.Point(265, 132);
-            this.MskTc.Name = "MskTc";
-            this.MskTc.Size = new System.Drawing.Size(234, 42);
-            this.MskTc.TabIndex = 38;
-            // 
-            // BtnGirisYap
-            // 
-            this.BtnGirisYap.Location = new System.Drawing.Point(338, 269);
-            this.BtnGirisYap.Name = "BtnGirisYap";
-            this.BtnGirisYap.Size = new System.Drawing.Size(161, 46);
-            this.BtnGirisYap.TabIndex = 37;
-            this.BtnGirisYap.Text = "Giriş Yap";
-            this.BtnGirisYap.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(83, 205);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 35);
-            this.label2.TabIndex = 36;
-            this.label2.Text = "Şifre:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 135);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 35);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "TC Kimlik No:";
             // 
             // label4
             // 
@@ -90,20 +47,65 @@ namespace Hastane_Otamasyonu
             this.label4.TabIndex = 34;
             this.label4.Text = "Sekreter Giriş Paneli";
             // 
+            // MskTc
+            // 
+            this.MskTc.Location = new System.Drawing.Point(240, 116);
+            this.MskTc.Mask = "00000000000";
+            this.MskTc.Name = "MskTc";
+            this.MskTc.Size = new System.Drawing.Size(234, 42);
+            this.MskTc.TabIndex = 40;
+            this.MskTc.UseWaitCursor = true;
+            this.MskTc.ValidatingType = typeof(int);
+            // 
+            // TxtSifre
+            // 
+            this.TxtSifre.Location = new System.Drawing.Point(240, 186);
+            this.TxtSifre.Name = "TxtSifre";
+            this.TxtSifre.Size = new System.Drawing.Size(234, 42);
+            this.TxtSifre.TabIndex = 39;
+            this.TxtSifre.UseSystemPasswordChar = true;
+            // 
+            // BtnGirisYap
+            // 
+            this.BtnGirisYap.Location = new System.Drawing.Point(313, 253);
+            this.BtnGirisYap.Name = "BtnGirisYap";
+            this.BtnGirisYap.Size = new System.Drawing.Size(161, 46);
+            this.BtnGirisYap.TabIndex = 38;
+            this.BtnGirisYap.Text = "Giriş Yap";
+            this.BtnGirisYap.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(58, 189);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 35);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Şifre:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(58, 119);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 35);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "TC Kimlik No:";
+            // 
             // FrmSekreterGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(618, 339);
-            this.Controls.Add(this.TxtSifre);
             this.Controls.Add(this.MskTc);
+            this.Controls.Add(this.TxtSifre);
             this.Controls.Add(this.BtnGirisYap);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Font = new System.Drawing.Font("Corbel", 14F);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmSekreterGiris";
             this.Text = "FrmSekreter";
             this.ResumeLayout(false);
@@ -112,12 +114,11 @@ namespace Hastane_Otamasyonu
         }
 
         #endregion
-
-        private System.Windows.Forms.MaskedTextBox TxtSifre;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox MskTc;
+        private System.Windows.Forms.MaskedTextBox TxtSifre;
         private System.Windows.Forms.Button BtnGirisYap;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
     }
 }
