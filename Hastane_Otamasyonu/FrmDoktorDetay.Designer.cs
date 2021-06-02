@@ -39,10 +39,9 @@ namespace Hastane_Otamasyonu
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.BtnGuncelle = new System.Windows.Forms.Button();
-            this.BtnDuyurular = new System.Windows.Forms.Button();
             this.BtnCikis = new System.Windows.Forms.Button();
-            this.Btninternet = new System.Windows.Forms.Button();
+            this.BtnDuyurular = new System.Windows.Forms.Button();
+            this.BtnGuncelle = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -141,7 +140,6 @@ namespace Hastane_Otamasyonu
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.BtnCikis);
-            this.groupBox4.Controls.Add(this.Btninternet);
             this.groupBox4.Controls.Add(this.BtnDuyurular);
             this.groupBox4.Controls.Add(this.BtnGuncelle);
             this.groupBox4.Location = new System.Drawing.Point(12, 486);
@@ -151,14 +149,14 @@ namespace Hastane_Otamasyonu
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Hızlı Erişim";
             // 
-            // BtnGuncelle
+            // BtnCikis
             // 
-            this.BtnGuncelle.Location = new System.Drawing.Point(6, 41);
-            this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(220, 49);
-            this.BtnGuncelle.TabIndex = 0;
-            this.BtnGuncelle.Text = "Bilgileri Düzenle";
-            this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnCikis.Location = new System.Drawing.Point(6, 96);
+            this.BtnCikis.Name = "BtnCikis";
+            this.BtnCikis.Size = new System.Drawing.Size(377, 49);
+            this.BtnCikis.TabIndex = 3;
+            this.BtnCikis.Text = "Çıkış";
+            this.BtnCikis.UseVisualStyleBackColor = true;
             // 
             // BtnDuyurular
             // 
@@ -169,23 +167,14 @@ namespace Hastane_Otamasyonu
             this.BtnDuyurular.Text = "Duyurular";
             this.BtnDuyurular.UseVisualStyleBackColor = true;
             // 
-            // BtnCikis
+            // BtnGuncelle
             // 
-            this.BtnCikis.Location = new System.Drawing.Point(232, 96);
-            this.BtnCikis.Name = "BtnCikis";
-            this.BtnCikis.Size = new System.Drawing.Size(151, 49);
-            this.BtnCikis.TabIndex = 3;
-            this.BtnCikis.Text = "Çıkış";
-            this.BtnCikis.UseVisualStyleBackColor = true;
-            // 
-            // Btninternet
-            // 
-            this.Btninternet.Location = new System.Drawing.Point(6, 96);
-            this.Btninternet.Name = "Btninternet";
-            this.Btninternet.Size = new System.Drawing.Size(220, 49);
-            this.Btninternet.TabIndex = 2;
-            this.Btninternet.Text = "İnternet";
-            this.Btninternet.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Location = new System.Drawing.Point(6, 41);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(220, 49);
+            this.BtnGuncelle.TabIndex = 0;
+            this.BtnGuncelle.Text = "Bilgileri Düzenle";
+            this.BtnGuncelle.UseVisualStyleBackColor = true;
             // 
             // FrmDoktorDetay
             // 
@@ -199,7 +188,7 @@ namespace Hastane_Otamasyonu
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 14F);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmDoktorDetay";
             this.Text = "FrmDoktorDetay";
             this.groupBox1.ResumeLayout(false);
@@ -225,7 +214,6 @@ namespace Hastane_Otamasyonu
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button BtnCikis;
-        private System.Windows.Forms.Button Btninternet;
         private System.Windows.Forms.Button BtnDuyurular;
         private System.Windows.Forms.Button BtnGuncelle;
     }
