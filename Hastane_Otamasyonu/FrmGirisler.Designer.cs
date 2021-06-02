@@ -78,12 +78,12 @@ namespace Hastane_Otamasyonu
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe Script", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Font = new System.Drawing.Font("Segoe Script", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(-2, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(551, 80);
+            this.label4.Size = new System.Drawing.Size(575, 67);
             this.label4.TabIndex = 14;
-            this.label4.Text = "Bti Bilisim Hospital";
+            this.label4.Text = "Bti Danışmanlık Hospital";
             // 
             // label1
             // 
@@ -121,6 +121,7 @@ namespace Hastane_Otamasyonu
             this.button1.Size = new System.Drawing.Size(157, 137);
             this.button1.TabIndex = 16;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -131,6 +132,7 @@ namespace Hastane_Otamasyonu
             this.button2.Size = new System.Drawing.Size(157, 137);
             this.button2.TabIndex = 17;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -141,11 +143,13 @@ namespace Hastane_Otamasyonu
             this.button3.Size = new System.Drawing.Size(157, 137);
             this.button3.TabIndex = 18;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FrmGirisler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(22F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(908, 420);
             this.Controls.Add(this.button3);
@@ -159,9 +163,11 @@ namespace Hastane_Otamasyonu
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox3);
             this.Font = new System.Drawing.Font("Georgia", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.MaximizeBox = false;
             this.Name = "FrmGirisler";
-            this.Text = "Form1";
+            this.Text = "Bti Danışmanlık Hospital Giris";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

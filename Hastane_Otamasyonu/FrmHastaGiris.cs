@@ -16,5 +16,17 @@ namespace Hastane_Otamasyonu
         {
             InitializeComponent();
         }
+
+        private void LnkUyeOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmHastaKayit fr = new FrmHastaKayit();
+            fr.Show();           
+        }
+
+        private void BtnGirisYap_Click(object sender, EventArgs e)
+        {
+            FrmHastaDetay fr = new FrmHastaDetay();
+            fr.Show();
+        }
     }
 }

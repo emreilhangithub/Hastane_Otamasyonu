@@ -29,6 +29,7 @@ namespace Hastane_Otamasyonu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHastaGiris));
             this.LnkUyeOl = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.TxtSifre = new System.Windows.Forms.MaskedTextBox();
@@ -47,6 +48,7 @@ namespace Hastane_Otamasyonu
             this.LnkUyeOl.TabIndex = 2;
             this.LnkUyeOl.TabStop = true;
             this.LnkUyeOl.Text = "Üye Ol";
+            this.LnkUyeOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkUyeOl_LinkClicked);
             // 
             // label4
             // 
@@ -82,6 +84,7 @@ namespace Hastane_Otamasyonu
             this.BtnGirisYap.TabIndex = 25;
             this.BtnGirisYap.Text = "Giriş Yap";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // label2
             // 
@@ -103,10 +106,12 @@ namespace Hastane_Otamasyonu
             // 
             // FrmHastaGiris
             // 
+            this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(798, 417);
+            this.ClientSize = new System.Drawing.Size(665, 345);
             this.Controls.Add(this.TxtSifre);
             this.Controls.Add(this.MskTc);
             this.Controls.Add(this.BtnGirisYap);
@@ -115,7 +120,9 @@ namespace Hastane_Otamasyonu
             this.Controls.Add(this.label4);
             this.Controls.Add(this.LnkUyeOl);
             this.Font = new System.Drawing.Font("Corbel", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmHastaGiris";
             this.Text = "FrmHastaGiris";
             this.ResumeLayout(false);
