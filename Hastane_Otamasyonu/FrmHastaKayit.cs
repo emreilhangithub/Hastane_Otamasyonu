@@ -34,6 +34,7 @@ namespace Hastane_Otamasyonu
             //normalde burada baglanti kapatmak icin direk baglanti derdik
             //ama baglanti methoduna ulasmak için bgl nesnesinden gidecez
             MessageBox.Show("Kaydınız Gerçekleşmiştir Şifreniz = " + TxtSifre.Text," Bilgi ",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            this.Close();
         }
 
         private void FrmHastaKayit_Load(object sender, EventArgs e)

@@ -47,6 +47,8 @@ namespace Hastane_Otamasyonu
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -73,7 +75,7 @@ namespace Hastane_Otamasyonu
             this.LblAdSoyad.AutoSize = true;
             this.LblAdSoyad.Location = new System.Drawing.Point(177, 49);
             this.LblAdSoyad.Name = "LblAdSoyad";
-            this.LblAdSoyad.Size = new System.Drawing.Size(119, 35);
+            this.LblAdSoyad.Size = new System.Drawing.Size(76, 23);
             this.LblAdSoyad.TabIndex = 37;
             this.LblAdSoyad.Text = "Null Null";
             // 
@@ -82,7 +84,7 @@ namespace Hastane_Otamasyonu
             this.LblTc.AutoSize = true;
             this.LblTc.Location = new System.Drawing.Point(177, 111);
             this.LblTc.Name = "LblTc";
-            this.LblTc.Size = new System.Drawing.Size(169, 35);
+            this.LblTc.Size = new System.Drawing.Size(120, 23);
             this.LblTc.TabIndex = 36;
             this.LblTc.Text = "00000000000";
             // 
@@ -91,7 +93,7 @@ namespace Hastane_Otamasyonu
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(39, 49);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 35);
+            this.label4.Size = new System.Drawing.Size(89, 23);
             this.label4.TabIndex = 33;
             this.label4.Text = "Ad Soyad:";
             // 
@@ -100,12 +102,14 @@ namespace Hastane_Otamasyonu
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(-5, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 35);
+            this.label1.Size = new System.Drawing.Size(117, 23);
             this.label1.TabIndex = 30;
             this.label1.Text = "TC Kimlik No:";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtid);
+            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.LnkBilgiDuzenle);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
@@ -126,35 +130,36 @@ namespace Hastane_Otamasyonu
             this.LnkBilgiDuzenle.AutoSize = true;
             this.LnkBilgiDuzenle.Location = new System.Drawing.Point(11, 415);
             this.LnkBilgiDuzenle.Name = "LnkBilgiDuzenle";
-            this.LnkBilgiDuzenle.Size = new System.Drawing.Size(207, 35);
+            this.LnkBilgiDuzenle.Size = new System.Drawing.Size(133, 23);
             this.LnkBilgiDuzenle.TabIndex = 41;
             this.LnkBilgiDuzenle.TabStop = true;
             this.LnkBilgiDuzenle.Text = "Bilgileri Düzenle";
+            this.LnkBilgiDuzenle.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkBilgiDuzenle_LinkClicked);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 156);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 35);
+            this.label6.Size = new System.Drawing.Size(72, 23);
             this.label6.TabIndex = 40;
             this.label6.Text = "Şikayet:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 98);
+            this.label5.Location = new System.Drawing.Point(11, 107);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 35);
+            this.label5.Size = new System.Drawing.Size(70, 23);
             this.label5.TabIndex = 39;
             this.label5.Text = "Doktor:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 41);
+            this.label2.Location = new System.Drawing.Point(22, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 35);
+            this.label2.Size = new System.Drawing.Size(59, 23);
             this.label2.TabIndex = 38;
             this.label2.Text = "Branş:";
             // 
@@ -169,17 +174,18 @@ namespace Hastane_Otamasyonu
             // CmbDoktor
             // 
             this.CmbDoktor.FormattingEnabled = true;
-            this.CmbDoktor.Location = new System.Drawing.Point(121, 98);
+            this.CmbDoktor.Location = new System.Drawing.Point(121, 107);
             this.CmbDoktor.Name = "CmbDoktor";
-            this.CmbDoktor.Size = new System.Drawing.Size(247, 43);
+            this.CmbDoktor.Size = new System.Drawing.Size(247, 31);
             this.CmbDoktor.TabIndex = 2;
+            this.CmbDoktor.SelectedIndexChanged += new System.EventHandler(this.CmbDoktor_SelectedIndexChanged);
             // 
             // CmbBrans
             // 
             this.CmbBrans.FormattingEnabled = true;
-            this.CmbBrans.Location = new System.Drawing.Point(121, 41);
+            this.CmbBrans.Location = new System.Drawing.Point(121, 66);
             this.CmbBrans.Name = "CmbBrans";
-            this.CmbBrans.Size = new System.Drawing.Size(247, 43);
+            this.CmbBrans.Size = new System.Drawing.Size(247, 31);
             this.CmbBrans.TabIndex = 1;
             this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.CmbBrans_SelectedIndexChanged);
             // 
@@ -206,11 +212,11 @@ namespace Hastane_Otamasyonu
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 38);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 26);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(986, 243);
+            this.dataGridView1.Size = new System.Drawing.Size(986, 255);
             this.dataGridView1.TabIndex = 41;
             // 
             // groupBox4
@@ -227,15 +233,31 @@ namespace Hastane_Otamasyonu
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 38);
+            this.dataGridView2.Location = new System.Drawing.Point(3, 26);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.Size = new System.Drawing.Size(975, 319);
+            this.dataGridView2.Size = new System.Drawing.Size(975, 331);
             this.dataGridView2.TabIndex = 42;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(49, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 23);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "id:";
+            // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(121, 30);
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(247, 30);
+            this.txtid.TabIndex = 43;
             // 
             // FrmHastaDetay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(1428, 686);
@@ -280,5 +302,7 @@ namespace Hastane_Otamasyonu
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.LinkLabel LnkBilgiDuzenle;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtid;
     }
 }

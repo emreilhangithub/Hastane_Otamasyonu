@@ -44,7 +44,7 @@ namespace Hastane_Otamasyonu
             this.LnkUyeOl.AutoSize = true;
             this.LnkUyeOl.Location = new System.Drawing.Point(563, 208);
             this.LnkUyeOl.Name = "LnkUyeOl";
-            this.LnkUyeOl.Size = new System.Drawing.Size(93, 35);
+            this.LnkUyeOl.Size = new System.Drawing.Size(62, 23);
             this.LnkUyeOl.TabIndex = 2;
             this.LnkUyeOl.TabStop = true;
             this.LnkUyeOl.Text = "Üye Ol";
@@ -56,7 +56,7 @@ namespace Hastane_Otamasyonu
             this.label4.Font = new System.Drawing.Font("Segoe Script", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(77, 23);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(501, 80);
+            this.label4.Size = new System.Drawing.Size(335, 53);
             this.label4.TabIndex = 15;
             this.label4.Text = "Hasta Giriş Paneli";
             // 
@@ -65,8 +65,9 @@ namespace Hastane_Otamasyonu
             this.MskTc.Location = new System.Drawing.Point(297, 135);
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
-            this.MskTc.Size = new System.Drawing.Size(234, 42);
+            this.MskTc.Size = new System.Drawing.Size(234, 30);
             this.MskTc.TabIndex = 27;
+            this.MskTc.Text = "11111111111";
             this.MskTc.UseWaitCursor = true;
             this.MskTc.ValidatingType = typeof(int);
             // 
@@ -74,8 +75,9 @@ namespace Hastane_Otamasyonu
             // 
             this.TxtSifre.Location = new System.Drawing.Point(297, 205);
             this.TxtSifre.Name = "TxtSifre";
-            this.TxtSifre.Size = new System.Drawing.Size(234, 42);
+            this.TxtSifre.Size = new System.Drawing.Size(234, 30);
             this.TxtSifre.TabIndex = 26;
+            this.TxtSifre.Text = "1111";
             this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // BtnGirisYap
@@ -93,7 +95,7 @@ namespace Hastane_Otamasyonu
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(115, 208);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 35);
+            this.label2.Size = new System.Drawing.Size(50, 23);
             this.label2.TabIndex = 24;
             this.label2.Text = "Şifre:";
             // 
@@ -102,14 +104,14 @@ namespace Hastane_Otamasyonu
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(115, 138);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 35);
+            this.label1.Size = new System.Drawing.Size(117, 23);
             this.label1.TabIndex = 23;
             this.label1.Text = "TC Kimlik No:";
             // 
             // FrmHastaGiris
             // 
             this.AcceptButton = this.BtnGirisYap;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;

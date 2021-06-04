@@ -66,5 +66,23 @@ namespace Hastane_Otamasyonu
             }
             bgl.baglanti().Close();
         }
+
+        private void CmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //doktoru seçtikden sonra randevular gelecek data gridden
+            DataTable dt = new DataTable(); 
+            SqlDataAdapter da = new SqlDataAdapter("Select * from Tbl_Randevular where RandevuBrans='"+CmbBrans.Text+"'", bgl.baglanti());
+            da.Fill(dt);
+            dataGridView2.DataSource = dt; 
+
+
+        }
+
+        private void LnkBilgiDuzenle_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmBilgiDuzenle fr = new FrmBilgiDuzenle();
+            fr.tcno = LblTc.Text;
+            fr.Show();
+        }
     }
 }

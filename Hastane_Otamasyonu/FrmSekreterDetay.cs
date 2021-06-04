@@ -16,5 +16,12 @@ namespace Hastane_Otamasyonu
         {
             InitializeComponent();
         }
+
+        public string Tcnumara;
+
+        private void FrmSekreterDetay_Load(object sender, EventArgs e)
+        {
+            LblTc.Text = Tcnumara;
+        }
     }
 }
