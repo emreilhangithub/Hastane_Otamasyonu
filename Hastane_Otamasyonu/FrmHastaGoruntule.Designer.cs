@@ -151,13 +151,13 @@ namespace Hastane_Otamasyonu
             this.LblCinsiyet.TabIndex = 60;
             this.LblCinsiyet.Text = "label12";
             // 
-            // FrmBilgiGoruntule
+            // FrmHastaGoruntule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(320, 379);
+            this.ClientSize = new System.Drawing.Size(336, 379);
             this.Controls.Add(this.LblCinsiyet);
             this.Controls.Add(this.LblSifre);
             this.Controls.Add(this.LblTelefon);
@@ -171,10 +171,10 @@ namespace Hastane_Otamasyonu
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 14F);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
-            this.Name = "FrmBilgiGoruntule";
-            this.Text = "Bilgi Görüntüle";
+            this.Name = "FrmHastaGoruntule";
+            this.Text = "Hasta Bilgi Görüntüle";
             this.Load += new System.EventHandler(this.FrmBilgiGoruntule_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

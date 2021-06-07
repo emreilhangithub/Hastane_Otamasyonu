@@ -64,7 +64,9 @@ namespace Hastane_Otamasyonu
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            FrmDoktorGoruntule fr = new FrmDoktorGoruntule();
+            fr.Tc = LblTc.Text;
+            fr.Show();
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
