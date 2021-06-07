@@ -75,6 +75,7 @@ namespace Hastane_Otamasyonu
             this.BtnGirisYap.TabIndex = 32;
             this.BtnGirisYap.Text = "Giriş Yap";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // label2
             // 
@@ -98,6 +99,7 @@ namespace Hastane_Otamasyonu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(647, 363);
             this.Controls.Add(this.MskTc);
@@ -108,8 +110,10 @@ namespace Hastane_Otamasyonu
             this.Controls.Add(this.label4);
             this.Font = new System.Drawing.Font("Corbel", 14F);
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmDoktorGiris";
-            this.Text = "FrmDoktorGiris";
+            this.Text = "Doktor Giriş";
+            this.Load += new System.EventHandler(this.FrmDoktorGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
