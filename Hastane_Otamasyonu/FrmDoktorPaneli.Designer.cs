@@ -171,6 +171,7 @@ namespace Hastane_Otamasyonu
             this.BtnGuncelle.TabIndex = 66;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = false;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // FrmDoktorPaneli
             // 

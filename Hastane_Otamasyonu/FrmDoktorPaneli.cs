@@ -63,5 +63,19 @@ namespace Hastane_Otamasyonu
             bgl.baglanti().Close();
             MessageBox.Show("Doktor Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("update Tbl_Doktorlar set DoktorAd=@d1,DoktorSoyad=@d2,DoktorBrans=@d3,DoktorSifre=@d5 where DoktorTc=@d4",bgl.baglanti());
+            komut.Parameters.AddWithValue("@d1", TxtAd.Text);
+            komut.Parameters.AddWithValue("@d2", TxtSoyad.Text);
+            komut.Parameters.AddWithValue("@d3", CmbBrans.Text);
+            komut.Parameters.AddWithValue("@d4", MskTc.Text);
+            komut.Parameters.AddWithValue("@d5", TxtSifre.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Doktor Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
     }
 }
