@@ -108,5 +108,11 @@ namespace Hastane_Otamasyonu
 
 
         }
+
+        private void BtnDoktorPanel_Click(object sender, EventArgs e)
+        {
+            FrmDoktorPaneli drp = new FrmDoktorPaneli();
+            drp.Show();
+        }
     }
 }

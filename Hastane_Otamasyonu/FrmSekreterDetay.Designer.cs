@@ -346,7 +346,7 @@ namespace Hastane_Otamasyonu
             this.groupBox5.Controls.Add(this.dataGridView2);
             this.groupBox5.Location = new System.Drawing.Point(784, 336);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(494, 425);
+            this.groupBox5.Size = new System.Drawing.Size(494, 347);
             this.groupBox5.TabIndex = 42;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Doktorlar";
@@ -360,7 +360,7 @@ namespace Hastane_Otamasyonu
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(488, 384);
+            this.dataGridView2.Size = new System.Drawing.Size(488, 306);
             this.dataGridView2.TabIndex = 0;
             // 
             // groupBox6
@@ -368,16 +368,16 @@ namespace Hastane_Otamasyonu
             this.groupBox6.Controls.Add(this.BtnListe);
             this.groupBox6.Controls.Add(this.BtnBransPanel);
             this.groupBox6.Controls.Add(this.BtnDoktorPanel);
-            this.groupBox6.Location = new System.Drawing.Point(13, 601);
+            this.groupBox6.Location = new System.Drawing.Point(-3, 587);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(765, 157);
+            this.groupBox6.Size = new System.Drawing.Size(765, 96);
             this.groupBox6.TabIndex = 1;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
             // 
             // BtnListe
             // 
-            this.BtnListe.Location = new System.Drawing.Point(504, 65);
+            this.BtnListe.Location = new System.Drawing.Point(503, 31);
             this.BtnListe.Name = "BtnListe";
             this.BtnListe.Size = new System.Drawing.Size(223, 56);
             this.BtnListe.TabIndex = 2;
@@ -386,7 +386,7 @@ namespace Hastane_Otamasyonu
             // 
             // BtnBransPanel
             // 
-            this.BtnBransPanel.Location = new System.Drawing.Point(261, 65);
+            this.BtnBransPanel.Location = new System.Drawing.Point(261, 31);
             this.BtnBransPanel.Name = "BtnBransPanel";
             this.BtnBransPanel.Size = new System.Drawing.Size(223, 56);
             this.BtnBransPanel.TabIndex = 1;
@@ -395,19 +395,20 @@ namespace Hastane_Otamasyonu
             // 
             // BtnDoktorPanel
             // 
-            this.BtnDoktorPanel.Location = new System.Drawing.Point(21, 65);
+            this.BtnDoktorPanel.Location = new System.Drawing.Point(22, 31);
             this.BtnDoktorPanel.Name = "BtnDoktorPanel";
             this.BtnDoktorPanel.Size = new System.Drawing.Size(223, 56);
             this.BtnDoktorPanel.TabIndex = 0;
             this.BtnDoktorPanel.Text = "Doktor Paneli";
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
+            this.BtnDoktorPanel.Click += new System.EventHandler(this.BtnDoktorPanel_Click);
             // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(1287, 773);
+            this.ClientSize = new System.Drawing.Size(1287, 687);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);

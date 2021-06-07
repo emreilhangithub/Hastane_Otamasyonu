@@ -7,14 +7,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Hastane_Otamasyonu
 {
     public partial class FrmDoktorPaneli : Form
     {
+
+        sqlbaglantisi bgl = new sqlbaglantisi();
+
         public FrmDoktorPaneli()
         {
             InitializeComponent();
+        }
+
+        private void FrmDoktorPaneli_Load(object sender, EventArgs e)
+        {
+            DataTable dt2 = new DataTable(); //datatable oluşturduk
+            SqlDataAdapter da2 = new SqlDataAdapter("Select * from Tbl_Doktorlar ", bgl.baglanti());
+            da2.Fill(dt2);
+            dataGridView1.DataSource = dt2;
+        }
+
+        private void BtnEkle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("insert into Tbl_Doktorlar (DoktorAd,DoktorSoyad,DoktorBrans,DoktorTc,DoktorSifre) values (@d1,@d2,@d3,@d4,@d5)",bgl.baglanti());
+            komut.Parameters.AddWithValue("@d1",TxtAd.Text);
+            komut.Parameters.AddWithValue("@d2",TxtSoyad.Text);
+            komut.Parameters.AddWithValue("@d3",CmbBrans.Text);
+            komut.Parameters.AddWithValue("@d4",MskTc.Text);
+            komut.Parameters.AddWithValue("@d5",TxtSifre.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Doktor Eklendi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
     }
 }
