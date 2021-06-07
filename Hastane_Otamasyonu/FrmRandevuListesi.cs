@@ -32,5 +32,16 @@ namespace Hastane_Otamasyonu
             da1.Fill(dt1);
             dataGridView1.DataSource = dt1;
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {        
+           
+        }
     }
 }

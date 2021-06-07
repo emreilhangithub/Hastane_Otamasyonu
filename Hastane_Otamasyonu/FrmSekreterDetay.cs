@@ -126,5 +126,10 @@ namespace Hastane_Otamasyonu
             FrmRandevuListesi frm = new FrmRandevuListesi();
             frm.Show();
         }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }
