@@ -54,5 +54,14 @@ namespace Hastane_Otamasyonu
             TxtSifre.Text = dataGridView1.Rows[secilen].Cells[5].Value.ToString();
 
         }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("DELETE FROM Tbl_Doktorlar WHERE DoktorTc=@d1;",bgl.baglanti());
+            komut.Parameters.AddWithValue("@d1", MskTc.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Doktor Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+        }
     }
 }
