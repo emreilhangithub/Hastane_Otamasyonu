@@ -71,7 +71,7 @@ namespace Hastane_Otamasyonu
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FrmDoktorBilgiDuzenle fr = new FrmDoktorBilgiDuzenle();
+            FrmDoktorDuzenle fr = new FrmDoktorDuzenle();
             fr.TCNO = LblTc.Text;
             fr.Show();
         }

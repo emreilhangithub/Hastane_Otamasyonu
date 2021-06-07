@@ -70,11 +70,11 @@
     <Compile Include="FrmBrans.Designer.cs">
       <DependentUpon>FrmBrans.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDoktorBilgiDuzenle.cs">
+    <Compile Include="FrmDoktorDuzenle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDoktorBilgiDuzenle.Designer.cs">
-      <DependentUpon>FrmDoktorBilgiDuzenle.cs</DependentUpon>
+    <Compile Include="FrmDoktorDuzenle.Designer.cs">
+      <DependentUpon>FrmDoktorDuzenle.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDoktorDetay.cs">
       <SubType>Form</SubType>
@@ -157,8 +157,8 @@
     <EmbeddedResource Include="FrmBrans.resx">
       <DependentUpon>FrmBrans.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDoktorBilgiDuzenle.resx">
-      <DependentUpon>FrmDoktorBilgiDuzenle.cs</DependentUpon>
+    <EmbeddedResource Include="FrmDoktorDuzenle.resx">
+      <DependentUpon>FrmDoktorDuzenle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDoktorDetay.resx">
       <DependentUpon>FrmDoktorDetay.cs</DependentUpon>

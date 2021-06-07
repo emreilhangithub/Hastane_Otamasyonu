@@ -11,12 +11,12 @@ using System.Data.SqlClient;
 
 namespace Hastane_Otamasyonu
 {
-    public partial class FrmDoktorBilgiDuzenle : Form
+    public partial class FrmDoktorDuzenle : Form
     {
         sqlbaglantisi bgl = new sqlbaglantisi();
         public string TCNO;
 
-        public FrmDoktorBilgiDuzenle()
+        public FrmDoktorDuzenle()
         {
             InitializeComponent();
         }
@@ -40,6 +40,15 @@ namespace Hastane_Otamasyonu
             }
             bgl.baglanti().Close();
 
+            //Bransları Çekme
+            SqlCommand komut2 = new SqlCommand("Select BransAd From Tbl_Branslar", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            while (dr2.Read())
+            {
+                CmbBrans.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
+
         }
 
         private void BtnBilgiGuncelle_Click(object sender, EventArgs e)
@@ -54,6 +63,11 @@ namespace Hastane_Otamasyonu
             bgl.baglanti().Close();
             MessageBox.Show("Bilgiler Güncellendi", " Bilgi ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
+        }
+
+        private void CmbBrans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

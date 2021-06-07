@@ -1,7 +1,7 @@
 ﻿
 namespace Hastane_Otamasyonu
 {
-    partial class FrmDoktorBilgiDuzenle
+    partial class FrmDoktorDuzenle
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Hastane_Otamasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoktorBilgiDuzenle));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoktorDuzenle));
             this.TxtSifre = new System.Windows.Forms.TextBox();
             this.TxtSoyad = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -136,8 +136,9 @@ namespace Hastane_Otamasyonu
             this.CmbBrans.Name = "CmbBrans";
             this.CmbBrans.Size = new System.Drawing.Size(234, 31);
             this.CmbBrans.TabIndex = 51;
+            this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.CmbBrans_SelectedIndexChanged);
             // 
-            // FrmDoktorBilgiDuzenle
+            // FrmDoktorDuzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -159,7 +160,7 @@ namespace Hastane_Otamasyonu
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
-            this.Name = "FrmDoktorBilgiDuzenle";
+            this.Name = "FrmDoktorDuzenle";
             this.Text = "Bilgi Düzenle";
             this.Load += new System.EventHandler(this.FrmDoktorBilgiDuzenle_Load);
             this.ResumeLayout(false);
