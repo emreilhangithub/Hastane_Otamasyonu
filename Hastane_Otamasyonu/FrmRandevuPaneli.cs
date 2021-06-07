@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Hastane_Otamasyonu
 {
-    public partial class FrmRandevuListesi : Form
+    public partial class FrmRandevuPaneli : Form
     {
-        public FrmRandevuListesi()
+        public FrmRandevuPaneli()
         {
             InitializeComponent();
         }

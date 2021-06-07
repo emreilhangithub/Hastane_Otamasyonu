@@ -122,7 +122,7 @@ namespace Hastane_Otamasyonu
 
         private void BtnListe_Click(object sender, EventArgs e)
         {
-            FrmRandevuListesi frm = new FrmRandevuListesi();
+            FrmRandevuPaneli frm = new FrmRandevuPaneli();
             frm.Show();
         }
 

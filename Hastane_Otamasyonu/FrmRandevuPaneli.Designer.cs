@@ -1,7 +1,7 @@
 ﻿
 namespace Hastane_Otamasyonu
 {
-    partial class FrmRandevuListesi
+    partial class FrmRandevuPaneli
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Hastane_Otamasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRandevuListesi));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRandevuPaneli));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
