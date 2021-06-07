@@ -62,6 +62,7 @@ namespace Hastane_Otamasyonu
             this.CmbBrans.Name = "CmbBrans";
             this.CmbBrans.Size = new System.Drawing.Size(234, 43);
             this.CmbBrans.TabIndex = 4;
+            this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.CmbBrans_SelectedIndexChanged);
             // 
             // TxtSifre
             // 

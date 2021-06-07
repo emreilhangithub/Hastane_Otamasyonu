@@ -23,10 +23,19 @@ namespace Hastane_Otamasyonu
 
         private void FrmDoktorPaneli_Load(object sender, EventArgs e)
         {
-            DataTable dt2 = new DataTable(); //datatable oluşturduk
-            SqlDataAdapter da2 = new SqlDataAdapter("Select * from Tbl_Doktorlar ", bgl.baglanti());
-            da2.Fill(dt2);
-            dataGridView1.DataSource = dt2;
+            DataTable dt1 = new DataTable(); //datatable oluşturduk
+            SqlDataAdapter da1 = new SqlDataAdapter("Select * from Tbl_Doktorlar ", bgl.baglanti());
+            da1.Fill(dt1);
+            dataGridView1.DataSource = dt1;
+
+            //Bransları Çekme
+            SqlCommand komut2 = new SqlCommand("Select BransAd From Tbl_Branslar", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            while (dr2.Read())
+            {
+                CmbBrans.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
         }
 
         private void BtnEkle_Click(object sender, EventArgs e)
@@ -76,6 +85,11 @@ namespace Hastane_Otamasyonu
             bgl.baglanti().Close();
             MessageBox.Show("Doktor Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+        }
+
+        private void CmbBrans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
         }
     }
 }
