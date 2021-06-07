@@ -133,7 +133,7 @@ namespace Hastane_Otamasyonu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmDuyurular frm = new FrmDuyurular();
+            FrmDuyuruPaneli frm = new FrmDuyuruPaneli();
             frm.Show();
         }
     }
