@@ -65,12 +65,11 @@ namespace Hastane_Otamasyonu
         {
             
             
-            SqlCommand komutkaydet = new SqlCommand("insert into Tbl_Randevular(RandevuTarih,RandevuSaat,RandevuBrans,RandevuDoktor,HastaTc) values(@p1,@p2,@p3,@p4,@p5)", bgl.baglanti());
+            SqlCommand komutkaydet = new SqlCommand("insert into Tbl_Randevular(RandevuTarih,RandevuSaat,RandevuBrans,RandevuDoktor) values(@p1,@p2,@p3,@p4)", bgl.baglanti());
             komutkaydet.Parameters.AddWithValue("@p1", MskTarih.Text);
             komutkaydet.Parameters.AddWithValue("@p2", MskSaat.Text);
             komutkaydet.Parameters.AddWithValue("@p3", CmbBrans.Text);
             komutkaydet.Parameters.AddWithValue("@p4", CmbDoktor.Text);
-            komutkaydet.Parameters.AddWithValue("@p5", MskTc.Text);
             komutkaydet.ExecuteNonQuery();
             bgl.baglanti().Close();
              MessageBox.Show("Randevu Kayıt Edilmiştir"," Bilgi ", MessageBoxButtons.OK, MessageBoxIcon.Information);
