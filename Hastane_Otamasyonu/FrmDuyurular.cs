@@ -23,7 +23,7 @@ namespace Hastane_Otamasyonu
         private void FrmDuyurular_Load(object sender, EventArgs e)
         {
             DataTable dt1 = new DataTable(); //datatable oluşturduk
-            SqlDataAdapter da1 = new SqlDataAdapter("Select * from Tbl_Duyurular ", bgl.baglanti());
+            SqlDataAdapter da1 = new SqlDataAdapter("Select * from Tbl_Duyurular order by Duyuruid desc", bgl.baglanti());
             da1.Fill(dt1);
             dataGridView1.DataSource = dt1;
         }
