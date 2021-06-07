@@ -1,7 +1,7 @@
 ﻿
 namespace Hastane_Otamasyonu
 {
-    partial class FrmBilgiDuzenle
+    partial class FrmHastaDuzenle
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Hastane_Otamasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBilgiDuzenle));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHastaDuzenle));
             this.CmbCinsiyet = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.TxtSifre = new System.Windows.Forms.TextBox();

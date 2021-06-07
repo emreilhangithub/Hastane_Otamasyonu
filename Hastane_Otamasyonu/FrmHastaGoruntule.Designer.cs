@@ -1,7 +1,7 @@
 ﻿
 namespace Hastane_Otamasyonu
 {
-    partial class FrmBilgiGoruntule
+    partial class FrmHastaGoruntule
     {
         /// <summary>
         /// Required designer variable.

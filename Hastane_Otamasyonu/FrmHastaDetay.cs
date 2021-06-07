@@ -80,7 +80,7 @@ namespace Hastane_Otamasyonu
 
         private void LnkBilgiDuzenle_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FrmBilgiDuzenle fr = new FrmBilgiDuzenle();
+            FrmHastaDuzenle fr = new FrmHastaDuzenle();
             fr.tcno = LblTc.Text;
             fr.Show();
         }
@@ -104,7 +104,7 @@ namespace Hastane_Otamasyonu
 
         private void LnkBilgiGoruntule_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FrmBilgiGoruntule fr = new FrmBilgiGoruntule();
+            FrmHastaGoruntule fr = new FrmHastaGoruntule();
             fr.Tc = LblTc.Text;
             fr.Show();
         }
