@@ -1,7 +1,7 @@
 ﻿
 namespace Hastane_Otamasyonu
 {
-    partial class FrmGirisler
+    partial class FrmGirisPaneli
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Hastane_Otamasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGirisler));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGirisPaneli));
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -61,7 +61,7 @@ namespace Hastane_Otamasyonu
             this.label3.Location = new System.Drawing.Point(2310, 1141);
             this.label3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 38);
+            this.label3.Size = new System.Drawing.Size(109, 27);
             this.label3.TabIndex = 5;
             this.label3.Text = "Sekreter";
             // 
@@ -81,7 +81,7 @@ namespace Hastane_Otamasyonu
             this.label4.Font = new System.Drawing.Font("Segoe Script", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(-2, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(575, 67);
+            this.label4.Size = new System.Drawing.Size(389, 44);
             this.label4.TabIndex = 14;
             this.label4.Text = "Bti Danışmanlık Hospital";
             // 
@@ -90,7 +90,7 @@ namespace Hastane_Otamasyonu
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(645, 368);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 38);
+            this.label1.Size = new System.Drawing.Size(109, 27);
             this.label1.TabIndex = 13;
             this.label1.Text = "Sekreter";
             // 
@@ -99,7 +99,7 @@ namespace Hastane_Otamasyonu
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(386, 368);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 38);
+            this.label2.Size = new System.Drawing.Size(93, 27);
             this.label2.TabIndex = 12;
             this.label2.Text = "Doktor";
             // 
@@ -108,7 +108,7 @@ namespace Hastane_Otamasyonu
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(125, 368);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 38);
+            this.label5.Size = new System.Drawing.Size(82, 27);
             this.label5.TabIndex = 11;
             this.label5.Text = "Hasta";
             // 
@@ -145,9 +145,9 @@ namespace Hastane_Otamasyonu
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // FrmGirisler
+            // FrmGirisPaneli
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(22F, 38F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -166,7 +166,7 @@ namespace Hastane_Otamasyonu
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.MaximizeBox = false;
-            this.Name = "FrmGirisler";
+            this.Name = "FrmGirisPaneli";
             this.Text = "Bti Danışmanlık Hospital Giris";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

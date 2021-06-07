@@ -16,7 +16,7 @@ namespace Hastane_Otamasyonu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmGirisler());
+            Application.Run(new FrmGirisPaneli());
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hastane_Otamasyonu
 {
-    public partial class FrmGirisler : Form
+    public partial class FrmGirisPaneli : Form
     {
-        public FrmGirisler()
+        public FrmGirisPaneli()
         {
             InitializeComponent();
         }
