@@ -84,5 +84,22 @@ namespace Hastane_Otamasyonu
             fr.tcno = LblTc.Text;
             fr.Show();
         }
+
+        private void dataGridView2_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView2.SelectedCells[0].RowIndex;
+            txtid.Text = dataGridView2.Rows[secilen].Cells[0].Value.ToString();              
+        }
+
+        private void BtnRandevuAl_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Update Tbl_Randevular Set RandevuDurum=1,HastaTc=@p1,HastaSikayet=@p2 where Randevuid=@p3", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", LblTc.Text);
+            komut.Parameters.AddWithValue("@p2", RchSikayet.Text);
+            komut.Parameters.AddWithValue("@p3", txtid.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Randevu Alındı","Uyarı",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+        }
     }
 }

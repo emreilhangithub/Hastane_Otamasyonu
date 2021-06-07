@@ -214,6 +214,7 @@ namespace Hastane_Otamasyonu
             this.BtnRandevuAl.TabIndex = 0;
             this.BtnRandevuAl.Text = "Randevu Al";
             this.BtnRandevuAl.UseVisualStyleBackColor = true;
+            this.BtnRandevuAl.Click += new System.EventHandler(this.BtnRandevuAl_Click);
             // 
             // groupBox3
             // 
@@ -255,6 +256,7 @@ namespace Hastane_Otamasyonu
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.Size = new System.Drawing.Size(732, 169);
             this.dataGridView2.TabIndex = 42;
+            this.dataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellDoubleClick);
             // 
             // FrmHastaDetay
             // 
