@@ -29,6 +29,7 @@ namespace Hastane_Otamasyonu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoktorPaneli));
             this.label5 = new System.Windows.Forms.Label();
             this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.TxtSifre = new System.Windows.Forms.TextBox();
@@ -143,7 +144,9 @@ namespace Hastane_Otamasyonu
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersVisible = false;
             this.dataGridView1.Location = new System.Drawing.Point(474, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
@@ -178,6 +181,7 @@ namespace Hastane_Otamasyonu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(1096, 467);
             this.Controls.Add(this.BtnGuncelle);
@@ -195,9 +199,11 @@ namespace Hastane_Otamasyonu
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 14F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmDoktorPaneli";
-            this.Text = "FrmDoktorPaneli";
+            this.Text = "Doktor Paneli";
             this.Load += new System.EventHandler(this.FrmDoktorPaneli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

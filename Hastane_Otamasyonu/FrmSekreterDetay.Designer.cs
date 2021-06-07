@@ -392,6 +392,7 @@ namespace Hastane_Otamasyonu
             this.BtnBransPanel.TabIndex = 1;
             this.BtnBransPanel.Text = "Branş Paneli";
             this.BtnBransPanel.UseVisualStyleBackColor = true;
+            this.BtnBransPanel.Click += new System.EventHandler(this.BtnBransPanel_Click);
             // 
             // BtnDoktorPanel
             // 
