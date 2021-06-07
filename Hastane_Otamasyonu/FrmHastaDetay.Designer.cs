@@ -38,7 +38,6 @@ namespace Hastane_Otamasyonu
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.LnkBilgiDuzenle = new System.Windows.Forms.LinkLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,6 +49,8 @@ namespace Hastane_Otamasyonu
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.LnkBilgiDuzenle = new System.Windows.Forms.LinkLabel();
+            this.LnkBilgiGoruntule = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -60,13 +61,15 @@ namespace Hastane_Otamasyonu
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.LnkBilgiGoruntule);
             this.groupBox1.Controls.Add(this.LblAdSoyad);
             this.groupBox1.Controls.Add(this.LblTc);
+            this.groupBox1.Controls.Add(this.LnkBilgiDuzenle);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(389, 95);
+            this.groupBox1.Size = new System.Drawing.Size(389, 112);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kişisel Bilgiler";
@@ -83,7 +86,7 @@ namespace Hastane_Otamasyonu
             // LblTc
             // 
             this.LblTc.AutoSize = true;
-            this.LblTc.Location = new System.Drawing.Point(153, 60);
+            this.LblTc.Location = new System.Drawing.Point(153, 49);
             this.LblTc.Name = "LblTc";
             this.LblTc.Size = new System.Drawing.Size(120, 23);
             this.LblTc.TabIndex = 36;
@@ -101,7 +104,7 @@ namespace Hastane_Otamasyonu
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 60);
+            this.label1.Location = new System.Drawing.Point(11, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 23);
             this.label1.TabIndex = 30;
@@ -111,7 +114,6 @@ namespace Hastane_Otamasyonu
             // 
             this.groupBox2.Controls.Add(this.txtid);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.LnkBilgiDuzenle);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label2);
@@ -141,17 +143,6 @@ namespace Hastane_Otamasyonu
             this.label3.Size = new System.Drawing.Size(29, 23);
             this.label3.TabIndex = 42;
             this.label3.Text = "id:";
-            // 
-            // LnkBilgiDuzenle
-            // 
-            this.LnkBilgiDuzenle.AutoSize = true;
-            this.LnkBilgiDuzenle.Location = new System.Drawing.Point(11, 249);
-            this.LnkBilgiDuzenle.Name = "LnkBilgiDuzenle";
-            this.LnkBilgiDuzenle.Size = new System.Drawing.Size(133, 23);
-            this.LnkBilgiDuzenle.TabIndex = 41;
-            this.LnkBilgiDuzenle.TabStop = true;
-            this.LnkBilgiDuzenle.Text = "Bilgileri Düzenle";
-            this.LnkBilgiDuzenle.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkBilgiDuzenle_LinkClicked);
             // 
             // label6
             // 
@@ -258,6 +249,28 @@ namespace Hastane_Otamasyonu
             this.dataGridView2.TabIndex = 42;
             this.dataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellDoubleClick);
             // 
+            // LnkBilgiDuzenle
+            // 
+            this.LnkBilgiDuzenle.AutoSize = true;
+            this.LnkBilgiDuzenle.Location = new System.Drawing.Point(230, 83);
+            this.LnkBilgiDuzenle.Name = "LnkBilgiDuzenle";
+            this.LnkBilgiDuzenle.Size = new System.Drawing.Size(153, 23);
+            this.LnkBilgiDuzenle.TabIndex = 41;
+            this.LnkBilgiDuzenle.TabStop = true;
+            this.LnkBilgiDuzenle.Text = "Bilgilerimi Düzenle";
+            this.LnkBilgiDuzenle.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkBilgiDuzenle_LinkClicked);
+            // 
+            // LnkBilgiGoruntule
+            // 
+            this.LnkBilgiGoruntule.AutoSize = true;
+            this.LnkBilgiGoruntule.Location = new System.Drawing.Point(39, 83);
+            this.LnkBilgiGoruntule.Name = "LnkBilgiGoruntule";
+            this.LnkBilgiGoruntule.Size = new System.Drawing.Size(168, 23);
+            this.LnkBilgiGoruntule.TabIndex = 42;
+            this.LnkBilgiGoruntule.TabStop = true;
+            this.LnkBilgiGoruntule.Text = "Bilgilerimi Görüntüle";
+            this.LnkBilgiGoruntule.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkBilgiGoruntule_LinkClicked);
+            // 
             // FrmHastaDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -307,8 +320,9 @@ namespace Hastane_Otamasyonu
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.LinkLabel LnkBilgiDuzenle;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.LinkLabel LnkBilgiDuzenle;
+        private System.Windows.Forms.LinkLabel LnkBilgiGoruntule;
     }
 }

@@ -101,5 +101,12 @@ namespace Hastane_Otamasyonu
             bgl.baglanti().Close();
             MessageBox.Show("Randevu Alındı","Uyarı",MessageBoxButtons.OK,MessageBoxIcon.Warning);
         }
+
+        private void LnkBilgiGoruntule_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmBilgiGoruntule fr = new FrmBilgiGoruntule();
+            fr.Tc = LblTc.Text;
+            fr.Show();
+        }
     }
 }
