@@ -43,5 +43,12 @@ namespace Hastane_Otamasyonu
             dataGridView1.DataSource = dt;
 
         }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            FrmDoktorBilgiDuzenle fr = new FrmDoktorBilgiDuzenle();
+            fr.TCNO = LblTc.Text;
+            fr.Show();
+        }
     }
 }

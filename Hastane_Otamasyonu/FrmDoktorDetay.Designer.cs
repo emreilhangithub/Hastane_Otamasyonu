@@ -177,6 +177,7 @@ namespace Hastane_Otamasyonu
             this.BtnGuncelle.TabIndex = 0;
             this.BtnGuncelle.Text = "Bilgileri Düzenle";
             this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // FrmDoktorDetay
             // 
