@@ -35,6 +35,7 @@ namespace Hastane_Otamasyonu
             if (dr.Read())
             {
                 FrmDoktorDetay fr = new FrmDoktorDetay();
+                fr.tc = MskTc.Text;
                 fr.Show();
                 this.Hide();
             }
