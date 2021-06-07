@@ -39,8 +39,7 @@ namespace Hastane_Otamasyonu
             this.RchDuyuru = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.MskTc = new System.Windows.Forms.MaskedTextBox();
-            this.CmbDoktor = new System.Windows.Forms.ComboBox();
-            this.MskBrans = new System.Windows.Forms.ComboBox();
+            this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.MskSaat = new System.Windows.Forms.MaskedTextBox();
             this.MskTarih = new System.Windows.Forms.MaskedTextBox();
             this.Txtid = new System.Windows.Forms.TextBox();
@@ -57,11 +56,12 @@ namespace Hastane_Otamasyonu
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label9 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.BtnListe = new System.Windows.Forms.Button();
             this.BtnBransPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.CmbDoktor = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -151,9 +151,10 @@ namespace Hastane_Otamasyonu
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.MskTc);
             this.groupBox3.Controls.Add(this.CmbDoktor);
-            this.groupBox3.Controls.Add(this.MskBrans);
+            this.groupBox3.Controls.Add(this.CmbBrans);
             this.groupBox3.Controls.Add(this.MskSaat);
             this.groupBox3.Controls.Add(this.MskTarih);
             this.groupBox3.Controls.Add(this.Txtid);
@@ -182,21 +183,14 @@ namespace Hastane_Otamasyonu
             this.MskTc.TabIndex = 51;
             this.MskTc.ValidatingType = typeof(int);
             // 
-            // CmbDoktor
+            // CmbBrans
             // 
-            this.CmbDoktor.FormattingEnabled = true;
-            this.CmbDoktor.Location = new System.Drawing.Point(139, 266);
-            this.CmbDoktor.Name = "CmbDoktor";
-            this.CmbDoktor.Size = new System.Drawing.Size(194, 31);
-            this.CmbDoktor.TabIndex = 50;
-            // 
-            // MskBrans
-            // 
-            this.MskBrans.FormattingEnabled = true;
-            this.MskBrans.Location = new System.Drawing.Point(139, 211);
-            this.MskBrans.Name = "MskBrans";
-            this.MskBrans.Size = new System.Drawing.Size(194, 31);
-            this.MskBrans.TabIndex = 49;
+            this.CmbBrans.FormattingEnabled = true;
+            this.CmbBrans.Location = new System.Drawing.Point(139, 211);
+            this.CmbBrans.Name = "CmbBrans";
+            this.CmbBrans.Size = new System.Drawing.Size(194, 31);
+            this.CmbBrans.TabIndex = 49;
+            this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.MskBrans_SelectedIndexChanged);
             // 
             // MskSaat
             // 
@@ -240,6 +234,7 @@ namespace Hastane_Otamasyonu
             this.BtnKaydet.TabIndex = 44;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // ChkDurum
             // 
@@ -317,6 +312,7 @@ namespace Hastane_Otamasyonu
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 26);
@@ -338,6 +334,7 @@ namespace Hastane_Otamasyonu
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 26);
@@ -346,15 +343,6 @@ namespace Hastane_Otamasyonu
             this.dataGridView2.RowTemplate.Height = 28;
             this.dataGridView2.Size = new System.Drawing.Size(488, 396);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(0, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 23);
-            this.label9.TabIndex = 43;
-            this.label9.Text = "label9";
             // 
             // groupBox6
             // 
@@ -395,6 +383,24 @@ namespace Hastane_Otamasyonu
             this.BtnDoktorPanel.Text = "Doktor Paneli";
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(87, 361);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(56, 23);
+            this.label9.TabIndex = 52;
+            this.label9.Text = "TEST ";
+            // 
+            // CmbDoktor
+            // 
+            this.CmbDoktor.FormattingEnabled = true;
+            this.CmbDoktor.Location = new System.Drawing.Point(139, 266);
+            this.CmbDoktor.Name = "CmbDoktor";
+            this.CmbDoktor.Size = new System.Drawing.Size(194, 31);
+            this.CmbDoktor.TabIndex = 50;
+            this.CmbDoktor.SelectedIndexChanged += new System.EventHandler(this.CmbDoktor_SelectedIndexChanged);
+            // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -402,7 +408,6 @@ namespace Hastane_Otamasyonu
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(1287, 773);
             this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -424,7 +429,6 @@ namespace Hastane_Otamasyonu
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -449,8 +453,7 @@ namespace Hastane_Otamasyonu
         private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.Button BtnKaydet;
         private System.Windows.Forms.MaskedTextBox MskTc;
-        private System.Windows.Forms.ComboBox CmbDoktor;
-        private System.Windows.Forms.ComboBox MskBrans;
+        private System.Windows.Forms.ComboBox CmbBrans;
         private System.Windows.Forms.MaskedTextBox MskSaat;
         private System.Windows.Forms.MaskedTextBox MskTarih;
         private System.Windows.Forms.TextBox Txtid;
@@ -458,10 +461,11 @@ namespace Hastane_Otamasyonu
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Button BtnListe;
         private System.Windows.Forms.Button BtnBransPanel;
         private System.Windows.Forms.Button BtnDoktorPanel;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox CmbDoktor;
     }
 }
