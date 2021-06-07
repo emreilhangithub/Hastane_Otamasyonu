@@ -71,7 +71,7 @@ namespace Hastane_Otamasyonu
         {
             //doktoru seçtikden sonra randevular gelecek data gridden
             DataTable dt = new DataTable(); 
-            SqlDataAdapter da = new SqlDataAdapter("Select * from Tbl_Randevular where RandevuBrans='"+CmbBrans.Text+"'" + "and RandevuDoktor='"+CmbDoktor.Text+"' and RandevuDurum=0", bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select Randevuid,RandevuTarih,RandevuSaat,RandevuBrans,RandevuDoktor from Tbl_Randevular where RandevuBrans='" + CmbBrans.Text+"'" + "and RandevuDoktor='"+CmbDoktor.Text+"' and RandevuDurum=0", bgl.baglanti());
             da.Fill(dt);
             dataGridView2.DataSource = dt; 
 
