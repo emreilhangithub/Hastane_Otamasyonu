@@ -44,12 +44,6 @@ namespace Hastane_Otamasyonu
 
         }
 
-        private void BtnGuncelle_Click(object sender, EventArgs e)
-        {
-            FrmDoktorBilgiDuzenle fr = new FrmDoktorBilgiDuzenle();
-            fr.TCNO = LblTc.Text;
-            fr.Show();
-        }
 
         private void BtnDuyurular_Click(object sender, EventArgs e)
         {
@@ -66,6 +60,18 @@ namespace Hastane_Otamasyonu
         {
             int secilen = dataGridView1.SelectedCells[0].RowIndex;
             RchSikayet.Text = dataGridView1.Rows[secilen].Cells[7].Value.ToString();            
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmDoktorBilgiDuzenle fr = new FrmDoktorBilgiDuzenle();
+            fr.TCNO = LblTc.Text;
+            fr.Show();
         }
     }
 }

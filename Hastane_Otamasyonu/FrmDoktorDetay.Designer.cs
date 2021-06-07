@@ -42,7 +42,8 @@ namespace Hastane_Otamasyonu
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.BtnCikis = new System.Windows.Forms.Button();
             this.BtnDuyurular = new System.Windows.Forms.Button();
-            this.BtnGuncelle = new System.Windows.Forms.Button();
+            this.LnkBilgiGoruntule = new System.Windows.Forms.LinkLabel();
+            this.LnkBilgiGuncelle = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -52,13 +53,15 @@ namespace Hastane_Otamasyonu
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.LnkBilgiGuncelle);
+            this.groupBox1.Controls.Add(this.LnkBilgiGoruntule);
             this.groupBox1.Controls.Add(this.LblAdSoyad);
             this.groupBox1.Controls.Add(this.LblTc);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(305, 106);
+            this.groupBox1.Size = new System.Drawing.Size(305, 116);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Doktor Bilgiler";
@@ -75,7 +78,7 @@ namespace Hastane_Otamasyonu
             // LblTc
             // 
             this.LblTc.AutoSize = true;
-            this.LblTc.Location = new System.Drawing.Point(154, 69);
+            this.LblTc.Location = new System.Drawing.Point(150, 55);
             this.LblTc.Name = "LblTc";
             this.LblTc.Size = new System.Drawing.Size(120, 23);
             this.LblTc.TabIndex = 36;
@@ -93,7 +96,7 @@ namespace Hastane_Otamasyonu
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 69);
+            this.label1.Location = new System.Drawing.Point(22, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 23);
             this.label1.TabIndex = 30;
@@ -102,7 +105,7 @@ namespace Hastane_Otamasyonu
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.RchSikayet);
-            this.groupBox2.Location = new System.Drawing.Point(6, 124);
+            this.groupBox2.Location = new System.Drawing.Point(6, 134);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(311, 191);
             this.groupBox2.TabIndex = 39;
@@ -144,17 +147,16 @@ namespace Hastane_Otamasyonu
             // 
             this.groupBox4.Controls.Add(this.BtnCikis);
             this.groupBox4.Controls.Add(this.BtnDuyurular);
-            this.groupBox4.Controls.Add(this.BtnGuncelle);
-            this.groupBox4.Location = new System.Drawing.Point(12, 321);
+            this.groupBox4.Location = new System.Drawing.Point(12, 331);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(305, 119);
+            this.groupBox4.Size = new System.Drawing.Size(305, 109);
             this.groupBox4.TabIndex = 41;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Hızlı Erişim";
             // 
             // BtnCikis
             // 
-            this.BtnCikis.Location = new System.Drawing.Point(6, 79);
+            this.BtnCikis.Location = new System.Drawing.Point(6, 67);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.Size = new System.Drawing.Size(293, 32);
             this.BtnCikis.TabIndex = 3;
@@ -164,23 +166,35 @@ namespace Hastane_Otamasyonu
             // 
             // BtnDuyurular
             // 
-            this.BtnDuyurular.Location = new System.Drawing.Point(189, 41);
+            this.BtnDuyurular.Location = new System.Drawing.Point(6, 29);
             this.BtnDuyurular.Name = "BtnDuyurular";
-            this.BtnDuyurular.Size = new System.Drawing.Size(110, 32);
+            this.BtnDuyurular.Size = new System.Drawing.Size(293, 32);
             this.BtnDuyurular.TabIndex = 1;
             this.BtnDuyurular.Text = "Duyurular";
             this.BtnDuyurular.UseVisualStyleBackColor = true;
             this.BtnDuyurular.Click += new System.EventHandler(this.BtnDuyurular_Click);
             // 
-            // BtnGuncelle
+            // LnkBilgiGoruntule
             // 
-            this.BtnGuncelle.Location = new System.Drawing.Point(6, 41);
-            this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(133, 32);
-            this.BtnGuncelle.TabIndex = 0;
-            this.BtnGuncelle.Text = "Bilgileri Düzenle";
-            this.BtnGuncelle.UseVisualStyleBackColor = true;
-            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
+            this.LnkBilgiGoruntule.AutoSize = true;
+            this.LnkBilgiGoruntule.Location = new System.Drawing.Point(34, 90);
+            this.LnkBilgiGoruntule.Name = "LnkBilgiGoruntule";
+            this.LnkBilgiGoruntule.Size = new System.Drawing.Size(125, 23);
+            this.LnkBilgiGoruntule.TabIndex = 38;
+            this.LnkBilgiGoruntule.TabStop = true;
+            this.LnkBilgiGoruntule.Text = "Bilgi Görüntüle";
+            this.LnkBilgiGoruntule.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // LnkBilgiGuncelle
+            // 
+            this.LnkBilgiGuncelle.AutoSize = true;
+            this.LnkBilgiGuncelle.Location = new System.Drawing.Point(174, 90);
+            this.LnkBilgiGuncelle.Name = "LnkBilgiGuncelle";
+            this.LnkBilgiGuncelle.Size = new System.Drawing.Size(113, 23);
+            this.LnkBilgiGuncelle.TabIndex = 39;
+            this.LnkBilgiGuncelle.TabStop = true;
+            this.LnkBilgiGuncelle.Text = "Bilgi Güncelle";
+            this.LnkBilgiGuncelle.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // FrmDoktorDetay
             // 
@@ -225,6 +239,7 @@ namespace Hastane_Otamasyonu
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button BtnCikis;
         private System.Windows.Forms.Button BtnDuyurular;
-        private System.Windows.Forms.Button BtnGuncelle;
+        private System.Windows.Forms.LinkLabel LnkBilgiGuncelle;
+        private System.Windows.Forms.LinkLabel LnkBilgiGoruntule;
     }
 }
