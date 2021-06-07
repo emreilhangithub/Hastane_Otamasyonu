@@ -165,7 +165,7 @@ namespace Hastane_Otamasyonu
             this.groupBox3.Size = new System.Drawing.Size(355, 342);
             this.groupBox3.TabIndex = 38;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Randevu Paneli";
+            this.groupBox3.Text = "Doktor Randevu Oluştrma";
             // 
             // BtnKaydet
             // 
