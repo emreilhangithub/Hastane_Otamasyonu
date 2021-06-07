@@ -40,13 +40,13 @@ namespace Hastane_Otamasyonu
             this.RchDuyuru = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.MskTc = new System.Windows.Forms.MaskedTextBox();
+            this.BtnKaydet = new System.Windows.Forms.Button();
             this.CmbDoktor = new System.Windows.Forms.ComboBox();
             this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.MskSaat = new System.Windows.Forms.MaskedTextBox();
             this.MskTarih = new System.Windows.Forms.MaskedTextBox();
-            this.Txtid = new System.Windows.Forms.TextBox();
-            this.BtnKaydet = new System.Windows.Forms.Button();
             this.ChkDurum = new System.Windows.Forms.CheckBox();
+            this.Txtid = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -61,6 +61,7 @@ namespace Hastane_Otamasyonu
             this.BtnListe = new System.Windows.Forms.Button();
             this.BtnBransPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -177,52 +178,9 @@ namespace Hastane_Otamasyonu
             this.MskTc.Location = new System.Drawing.Point(134, 210);
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
-            this.MskTc.Size = new System.Drawing.Size(152, 30);
+            this.MskTc.Size = new System.Drawing.Size(194, 30);
             this.MskTc.TabIndex = 51;
             this.MskTc.ValidatingType = typeof(int);
-            // 
-            // CmbDoktor
-            // 
-            this.CmbDoktor.FormattingEnabled = true;
-            this.CmbDoktor.Location = new System.Drawing.Point(134, 172);
-            this.CmbDoktor.Name = "CmbDoktor";
-            this.CmbDoktor.Size = new System.Drawing.Size(152, 31);
-            this.CmbDoktor.TabIndex = 50;
-            this.CmbDoktor.SelectedIndexChanged += new System.EventHandler(this.CmbDoktor_SelectedIndexChanged);
-            // 
-            // CmbBrans
-            // 
-            this.CmbBrans.FormattingEnabled = true;
-            this.CmbBrans.Location = new System.Drawing.Point(134, 134);
-            this.CmbBrans.Name = "CmbBrans";
-            this.CmbBrans.Size = new System.Drawing.Size(152, 31);
-            this.CmbBrans.TabIndex = 49;
-            this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.MskBrans_SelectedIndexChanged);
-            // 
-            // MskSaat
-            // 
-            this.MskSaat.Location = new System.Drawing.Point(134, 97);
-            this.MskSaat.Mask = "00:00";
-            this.MskSaat.Name = "MskSaat";
-            this.MskSaat.Size = new System.Drawing.Size(152, 30);
-            this.MskSaat.TabIndex = 48;
-            this.MskSaat.ValidatingType = typeof(System.DateTime);
-            // 
-            // MskTarih
-            // 
-            this.MskTarih.Location = new System.Drawing.Point(134, 60);
-            this.MskTarih.Mask = "00/00/0000";
-            this.MskTarih.Name = "MskTarih";
-            this.MskTarih.Size = new System.Drawing.Size(152, 30);
-            this.MskTarih.TabIndex = 47;
-            this.MskTarih.ValidatingType = typeof(System.DateTime);
-            // 
-            // Txtid
-            // 
-            this.Txtid.Location = new System.Drawing.Point(134, 23);
-            this.Txtid.Name = "Txtid";
-            this.Txtid.Size = new System.Drawing.Size(152, 30);
-            this.Txtid.TabIndex = 46;
             // 
             // BtnKaydet
             // 
@@ -234,6 +192,42 @@ namespace Hastane_Otamasyonu
             this.BtnKaydet.UseVisualStyleBackColor = true;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
+            // CmbDoktor
+            // 
+            this.CmbDoktor.FormattingEnabled = true;
+            this.CmbDoktor.Location = new System.Drawing.Point(134, 172);
+            this.CmbDoktor.Name = "CmbDoktor";
+            this.CmbDoktor.Size = new System.Drawing.Size(194, 31);
+            this.CmbDoktor.TabIndex = 50;
+            this.CmbDoktor.SelectedIndexChanged += new System.EventHandler(this.CmbDoktor_SelectedIndexChanged);
+            // 
+            // CmbBrans
+            // 
+            this.CmbBrans.FormattingEnabled = true;
+            this.CmbBrans.Location = new System.Drawing.Point(134, 134);
+            this.CmbBrans.Name = "CmbBrans";
+            this.CmbBrans.Size = new System.Drawing.Size(194, 31);
+            this.CmbBrans.TabIndex = 49;
+            this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.MskBrans_SelectedIndexChanged);
+            // 
+            // MskSaat
+            // 
+            this.MskSaat.Location = new System.Drawing.Point(134, 97);
+            this.MskSaat.Mask = "00:00";
+            this.MskSaat.Name = "MskSaat";
+            this.MskSaat.Size = new System.Drawing.Size(194, 30);
+            this.MskSaat.TabIndex = 48;
+            this.MskSaat.ValidatingType = typeof(System.DateTime);
+            // 
+            // MskTarih
+            // 
+            this.MskTarih.Location = new System.Drawing.Point(134, 60);
+            this.MskTarih.Mask = "00/00/0000";
+            this.MskTarih.Name = "MskTarih";
+            this.MskTarih.Size = new System.Drawing.Size(194, 30);
+            this.MskTarih.TabIndex = 47;
+            this.MskTarih.ValidatingType = typeof(System.DateTime);
+            // 
             // ChkDurum
             // 
             this.ChkDurum.AutoSize = true;
@@ -243,6 +237,13 @@ namespace Hastane_Otamasyonu
             this.ChkDurum.TabIndex = 41;
             this.ChkDurum.Text = "Durum";
             this.ChkDurum.UseVisualStyleBackColor = true;
+            // 
+            // Txtid
+            // 
+            this.Txtid.Location = new System.Drawing.Point(134, 23);
+            this.Txtid.Name = "Txtid";
+            this.Txtid.Size = new System.Drawing.Size(194, 30);
+            this.Txtid.TabIndex = 46;
             // 
             // label8
             // 
@@ -344,6 +345,7 @@ namespace Hastane_Otamasyonu
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.button1);
             this.groupBox6.Controls.Add(this.BtnListe);
             this.groupBox6.Controls.Add(this.BtnBransPanel);
             this.groupBox6.Controls.Add(this.BtnDoktorPanel);
@@ -356,7 +358,7 @@ namespace Hastane_Otamasyonu
             // 
             // BtnListe
             // 
-            this.BtnListe.Location = new System.Drawing.Point(480, 30);
+            this.BtnListe.Location = new System.Drawing.Point(333, 28);
             this.BtnListe.Name = "BtnListe";
             this.BtnListe.Size = new System.Drawing.Size(143, 32);
             this.BtnListe.TabIndex = 2;
@@ -366,7 +368,7 @@ namespace Hastane_Otamasyonu
             // 
             // BtnBransPanel
             // 
-            this.BtnBransPanel.Location = new System.Drawing.Point(269, 28);
+            this.BtnBransPanel.Location = new System.Drawing.Point(174, 28);
             this.BtnBransPanel.Name = "BtnBransPanel";
             this.BtnBransPanel.Size = new System.Drawing.Size(143, 32);
             this.BtnBransPanel.TabIndex = 1;
@@ -376,13 +378,23 @@ namespace Hastane_Otamasyonu
             // 
             // BtnDoktorPanel
             // 
-            this.BtnDoktorPanel.Location = new System.Drawing.Point(58, 30);
+            this.BtnDoktorPanel.Location = new System.Drawing.Point(7, 28);
             this.BtnDoktorPanel.Name = "BtnDoktorPanel";
             this.BtnDoktorPanel.Size = new System.Drawing.Size(143, 32);
             this.BtnDoktorPanel.TabIndex = 0;
             this.BtnDoktorPanel.Text = "Doktor Paneli";
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
             this.BtnDoktorPanel.Click += new System.EventHandler(this.BtnDoktorPanel_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(491, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(143, 32);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Duyuru Paneli";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmSekreterDetay
             // 
@@ -451,5 +463,6 @@ namespace Hastane_Otamasyonu
         private System.Windows.Forms.Button BtnBransPanel;
         private System.Windows.Forms.Button BtnDoktorPanel;
         private System.Windows.Forms.ComboBox CmbDoktor;
+        private System.Windows.Forms.Button button1;
     }
 }
