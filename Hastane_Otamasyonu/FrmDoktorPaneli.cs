@@ -41,5 +41,18 @@ namespace Hastane_Otamasyonu
             bgl.baglanti().Close();
             MessageBox.Show("Doktor Eklendi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
+
+        
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+            TxtAd.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
+            TxtSoyad.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
+            CmbBrans.Text = dataGridView1.Rows[secilen].Cells[3].Value.ToString();
+            MskTc.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
+            TxtSifre.Text = dataGridView1.Rows[secilen].Cells[5].Value.ToString();
+
+        }
     }
 }
