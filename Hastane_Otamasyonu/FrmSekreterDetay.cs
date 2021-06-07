@@ -116,7 +116,7 @@ namespace Hastane_Otamasyonu
 
         private void BtnBransPanel_Click(object sender, EventArgs e)
         {
-            FrmBrans frm = new FrmBrans();
+            FrmBransPaneli frm = new FrmBransPaneli();
             frm.Show();
         }
 

@@ -278,6 +278,7 @@ namespace Hastane_Otamasyonu
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 26);
@@ -300,6 +301,7 @@ namespace Hastane_Otamasyonu
             // dataGridView2
             // 
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 26);
@@ -338,7 +340,7 @@ namespace Hastane_Otamasyonu
             this.BtnListe.Name = "BtnListe";
             this.BtnListe.Size = new System.Drawing.Size(143, 32);
             this.BtnListe.TabIndex = 2;
-            this.BtnListe.Text = "Randevu Listele";
+            this.BtnListe.Text = "Randevu Paneli";
             this.BtnListe.UseVisualStyleBackColor = true;
             this.BtnListe.Click += new System.EventHandler(this.BtnListe_Click);
             // 

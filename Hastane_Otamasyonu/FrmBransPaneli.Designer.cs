@@ -1,7 +1,7 @@
 ﻿
 namespace Hastane_Otamasyonu
 {
-    partial class FrmBrans
+    partial class FrmBransPaneli
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Hastane_Otamasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBrans));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBransPaneli));
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnSil = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -66,6 +66,7 @@ namespace Hastane_Otamasyonu
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(460, 35);
             this.dataGridView1.Name = "dataGridView1";
@@ -79,7 +80,7 @@ namespace Hastane_Otamasyonu
             // 
             this.TxtAd.Location = new System.Drawing.Point(210, 109);
             this.TxtAd.Name = "TxtAd";
-            this.TxtAd.Size = new System.Drawing.Size(234, 42);
+            this.TxtAd.Size = new System.Drawing.Size(234, 30);
             this.TxtAd.TabIndex = 74;
             // 
             // label4
@@ -87,7 +88,7 @@ namespace Hastane_Otamasyonu
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(60, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 35);
+            this.label4.Size = new System.Drawing.Size(84, 23);
             this.label4.TabIndex = 73;
             this.label4.Text = "Brans Ad:";
             // 
@@ -95,7 +96,7 @@ namespace Hastane_Otamasyonu
             // 
             this.Txtid.Location = new System.Drawing.Point(210, 48);
             this.Txtid.Name = "Txtid";
-            this.Txtid.Size = new System.Drawing.Size(234, 42);
+            this.Txtid.Size = new System.Drawing.Size(234, 30);
             this.Txtid.TabIndex = 72;
             // 
             // label3
@@ -103,7 +104,7 @@ namespace Hastane_Otamasyonu
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(70, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 35);
+            this.label3.Size = new System.Drawing.Size(78, 23);
             this.label3.TabIndex = 71;
             this.label3.Text = "Brans İd:";
             // 
@@ -118,9 +119,9 @@ namespace Hastane_Otamasyonu
             this.BtnEkle.UseVisualStyleBackColor = false;
             this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
             // 
-            // FrmBrans
+            // FrmBransPaneli
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -137,7 +138,7 @@ namespace Hastane_Otamasyonu
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
-            this.Name = "FrmBrans";
+            this.Name = "FrmBransPaneli";
             this.Text = "Branş Paneli";
             this.Load += new System.EventHandler(this.FrmBrans_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

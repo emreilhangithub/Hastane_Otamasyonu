@@ -11,11 +11,11 @@ using System.Data.SqlClient;
 
 namespace Hastane_Otamasyonu
 {
-    public partial class FrmBrans : Form
+    public partial class FrmBransPaneli : Form
     {
         sqlbaglantisi bgl = new sqlbaglantisi();
 
-        public FrmBrans()
+        public FrmBransPaneli()
         {
             InitializeComponent();
         }
