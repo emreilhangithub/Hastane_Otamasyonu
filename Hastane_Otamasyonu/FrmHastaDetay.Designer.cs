@@ -31,8 +31,10 @@ namespace Hastane_Otamasyonu
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHastaDetay));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.LnkBilgiGoruntule = new System.Windows.Forms.LinkLabel();
             this.LblAdSoyad = new System.Windows.Forms.Label();
             this.LblTc = new System.Windows.Forms.Label();
+            this.LnkBilgiDuzenle = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -49,8 +51,6 @@ namespace Hastane_Otamasyonu
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.LnkBilgiDuzenle = new System.Windows.Forms.LinkLabel();
-            this.LnkBilgiGoruntule = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -74,6 +74,17 @@ namespace Hastane_Otamasyonu
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kişisel Bilgiler";
             // 
+            // LnkBilgiGoruntule
+            // 
+            this.LnkBilgiGoruntule.AutoSize = true;
+            this.LnkBilgiGoruntule.Location = new System.Drawing.Point(39, 83);
+            this.LnkBilgiGoruntule.Name = "LnkBilgiGoruntule";
+            this.LnkBilgiGoruntule.Size = new System.Drawing.Size(168, 23);
+            this.LnkBilgiGoruntule.TabIndex = 42;
+            this.LnkBilgiGoruntule.TabStop = true;
+            this.LnkBilgiGoruntule.Text = "Bilgilerimi Görüntüle";
+            this.LnkBilgiGoruntule.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkBilgiGoruntule_LinkClicked);
+            // 
             // LblAdSoyad
             // 
             this.LblAdSoyad.AutoSize = true;
@@ -91,6 +102,17 @@ namespace Hastane_Otamasyonu
             this.LblTc.Size = new System.Drawing.Size(120, 23);
             this.LblTc.TabIndex = 36;
             this.LblTc.Text = "00000000000";
+            // 
+            // LnkBilgiDuzenle
+            // 
+            this.LnkBilgiDuzenle.AutoSize = true;
+            this.LnkBilgiDuzenle.Location = new System.Drawing.Point(230, 83);
+            this.LnkBilgiDuzenle.Name = "LnkBilgiDuzenle";
+            this.LnkBilgiDuzenle.Size = new System.Drawing.Size(153, 23);
+            this.LnkBilgiDuzenle.TabIndex = 41;
+            this.LnkBilgiDuzenle.TabStop = true;
+            this.LnkBilgiDuzenle.Text = "Bilgilerimi Düzenle";
+            this.LnkBilgiDuzenle.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkBilgiDuzenle_LinkClicked);
             // 
             // label4
             // 
@@ -219,6 +241,8 @@ namespace Hastane_Otamasyonu
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 26);
@@ -240,6 +264,8 @@ namespace Hastane_Otamasyonu
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 26);
@@ -248,28 +274,6 @@ namespace Hastane_Otamasyonu
             this.dataGridView2.Size = new System.Drawing.Size(732, 169);
             this.dataGridView2.TabIndex = 42;
             this.dataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellDoubleClick);
-            // 
-            // LnkBilgiDuzenle
-            // 
-            this.LnkBilgiDuzenle.AutoSize = true;
-            this.LnkBilgiDuzenle.Location = new System.Drawing.Point(230, 83);
-            this.LnkBilgiDuzenle.Name = "LnkBilgiDuzenle";
-            this.LnkBilgiDuzenle.Size = new System.Drawing.Size(153, 23);
-            this.LnkBilgiDuzenle.TabIndex = 41;
-            this.LnkBilgiDuzenle.TabStop = true;
-            this.LnkBilgiDuzenle.Text = "Bilgilerimi Düzenle";
-            this.LnkBilgiDuzenle.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkBilgiDuzenle_LinkClicked);
-            // 
-            // LnkBilgiGoruntule
-            // 
-            this.LnkBilgiGoruntule.AutoSize = true;
-            this.LnkBilgiGoruntule.Location = new System.Drawing.Point(39, 83);
-            this.LnkBilgiGoruntule.Name = "LnkBilgiGoruntule";
-            this.LnkBilgiGoruntule.Size = new System.Drawing.Size(168, 23);
-            this.LnkBilgiGoruntule.TabIndex = 42;
-            this.LnkBilgiGoruntule.TabStop = true;
-            this.LnkBilgiGoruntule.Text = "Bilgilerimi Görüntüle";
-            this.LnkBilgiGoruntule.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkBilgiGoruntule_LinkClicked);
             // 
             // FrmHastaDetay
             // 
