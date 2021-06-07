@@ -31,6 +31,8 @@ namespace Hastane_Otamasyonu
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoktorDetay));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.LnkBilgiGuncelle = new System.Windows.Forms.LinkLabel();
+            this.LnkBilgiGoruntule = new System.Windows.Forms.LinkLabel();
             this.LblAdSoyad = new System.Windows.Forms.Label();
             this.LblTc = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,8 +44,6 @@ namespace Hastane_Otamasyonu
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.BtnCikis = new System.Windows.Forms.Button();
             this.BtnDuyurular = new System.Windows.Forms.Button();
-            this.LnkBilgiGoruntule = new System.Windows.Forms.LinkLabel();
-            this.LnkBilgiGuncelle = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -65,6 +65,28 @@ namespace Hastane_Otamasyonu
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Doktor Bilgiler";
+            // 
+            // LnkBilgiGuncelle
+            // 
+            this.LnkBilgiGuncelle.AutoSize = true;
+            this.LnkBilgiGuncelle.Location = new System.Drawing.Point(174, 90);
+            this.LnkBilgiGuncelle.Name = "LnkBilgiGuncelle";
+            this.LnkBilgiGuncelle.Size = new System.Drawing.Size(113, 23);
+            this.LnkBilgiGuncelle.TabIndex = 39;
+            this.LnkBilgiGuncelle.TabStop = true;
+            this.LnkBilgiGuncelle.Text = "Bilgi Güncelle";
+            this.LnkBilgiGuncelle.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // LnkBilgiGoruntule
+            // 
+            this.LnkBilgiGoruntule.AutoSize = true;
+            this.LnkBilgiGoruntule.Location = new System.Drawing.Point(34, 90);
+            this.LnkBilgiGoruntule.Name = "LnkBilgiGoruntule";
+            this.LnkBilgiGoruntule.Size = new System.Drawing.Size(125, 23);
+            this.LnkBilgiGoruntule.TabIndex = 38;
+            this.LnkBilgiGoruntule.TabStop = true;
+            this.LnkBilgiGoruntule.Text = "Bilgi Görüntüle";
+            this.LnkBilgiGoruntule.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // LblAdSoyad
             // 
@@ -133,6 +155,7 @@ namespace Hastane_Otamasyonu
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 26);
@@ -173,28 +196,6 @@ namespace Hastane_Otamasyonu
             this.BtnDuyurular.Text = "Duyurular";
             this.BtnDuyurular.UseVisualStyleBackColor = true;
             this.BtnDuyurular.Click += new System.EventHandler(this.BtnDuyurular_Click);
-            // 
-            // LnkBilgiGoruntule
-            // 
-            this.LnkBilgiGoruntule.AutoSize = true;
-            this.LnkBilgiGoruntule.Location = new System.Drawing.Point(34, 90);
-            this.LnkBilgiGoruntule.Name = "LnkBilgiGoruntule";
-            this.LnkBilgiGoruntule.Size = new System.Drawing.Size(125, 23);
-            this.LnkBilgiGoruntule.TabIndex = 38;
-            this.LnkBilgiGoruntule.TabStop = true;
-            this.LnkBilgiGoruntule.Text = "Bilgi Görüntüle";
-            this.LnkBilgiGoruntule.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // LnkBilgiGuncelle
-            // 
-            this.LnkBilgiGuncelle.AutoSize = true;
-            this.LnkBilgiGuncelle.Location = new System.Drawing.Point(174, 90);
-            this.LnkBilgiGuncelle.Name = "LnkBilgiGuncelle";
-            this.LnkBilgiGuncelle.Size = new System.Drawing.Size(113, 23);
-            this.LnkBilgiGuncelle.TabIndex = 39;
-            this.LnkBilgiGuncelle.TabStop = true;
-            this.LnkBilgiGuncelle.Text = "Bilgi Güncelle";
-            this.LnkBilgiGuncelle.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // FrmDoktorDetay
             // 
