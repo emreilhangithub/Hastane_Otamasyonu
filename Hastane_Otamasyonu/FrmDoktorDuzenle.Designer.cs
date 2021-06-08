@@ -84,6 +84,7 @@ namespace Hastane_Otamasyonu
             // 
             // MskTc
             // 
+            this.MskTc.Enabled = false;
             this.MskTc.Location = new System.Drawing.Point(224, 135);
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";

@@ -152,6 +152,7 @@ namespace Hastane_Otamasyonu
             // 
             // txtid
             // 
+            this.txtid.Enabled = false;
             this.txtid.Location = new System.Drawing.Point(121, 26);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(247, 30);

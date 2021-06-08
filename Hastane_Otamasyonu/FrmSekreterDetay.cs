@@ -56,8 +56,8 @@ namespace Hastane_Otamasyonu
                 CmbBrans.Items.Add(dr2[0]);
             }
             bgl.baglanti().Close();
-
             
+            LblTarih.Text = DateTime.Now.ToString();
 
         }
 
@@ -98,8 +98,9 @@ namespace Hastane_Otamasyonu
 
         private void BtnDuyuruOlustur_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("insert into Tbl_Duyurular(duyuru) values(@d1)",bgl.baglanti());
+            SqlCommand komut = new SqlCommand("insert into Tbl_Duyurular(duyuru,DuyuruTarih) values(@d1,@d2)",bgl.baglanti());
             komut.Parameters.AddWithValue("@d1",RchDuyuru.Text);
+            komut.Parameters.AddWithValue("@d2",LblTarih.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Duyuru Oluşturuldu");

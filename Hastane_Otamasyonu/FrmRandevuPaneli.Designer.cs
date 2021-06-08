@@ -52,6 +52,7 @@ namespace Hastane_Otamasyonu
             this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnSil = new System.Windows.Forms.Button();
+            this.BtnListele = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -85,6 +86,7 @@ namespace Hastane_Otamasyonu
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.BtnListele);
             this.groupBox2.Controls.Add(this.MskTc);
             this.groupBox2.Controls.Add(this.CmbDurum);
             this.groupBox2.Controls.Add(this.label8);
@@ -255,9 +257,9 @@ namespace Hastane_Otamasyonu
             // BtnGuncelle
             // 
             this.BtnGuncelle.BackColor = System.Drawing.Color.GreenYellow;
-            this.BtnGuncelle.Location = new System.Drawing.Point(212, 387);
+            this.BtnGuncelle.Location = new System.Drawing.Point(193, 387);
             this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(194, 46);
+            this.BtnGuncelle.Size = new System.Drawing.Size(98, 46);
             this.BtnGuncelle.TabIndex = 130;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = false;
@@ -266,12 +268,23 @@ namespace Hastane_Otamasyonu
             // BtnSil
             // 
             this.BtnSil.BackColor = System.Drawing.Color.LightPink;
-            this.BtnSil.Location = new System.Drawing.Point(16, 387);
+            this.BtnSil.Location = new System.Drawing.Point(307, 387);
             this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(179, 46);
+            this.BtnSil.Size = new System.Drawing.Size(98, 46);
             this.BtnSil.TabIndex = 129;
             this.BtnSil.Text = "Sil";
             this.BtnSil.UseVisualStyleBackColor = false;
+            // 
+            // BtnListele
+            // 
+            this.BtnListele.BackColor = System.Drawing.Color.Yellow;
+            this.BtnListele.Location = new System.Drawing.Point(79, 387);
+            this.BtnListele.Name = "BtnListele";
+            this.BtnListele.Size = new System.Drawing.Size(98, 46);
+            this.BtnListele.TabIndex = 147;
+            this.BtnListele.Text = "Listele";
+            this.BtnListele.UseVisualStyleBackColor = false;
+            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
             // FrmRandevuPaneli
             // 
@@ -319,5 +332,6 @@ namespace Hastane_Otamasyonu
         private System.Windows.Forms.ComboBox CmbBrans;
         private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.Button BtnSil;
+        private System.Windows.Forms.Button BtnListele;
     }
 }

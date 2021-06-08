@@ -53,5 +53,13 @@ namespace Hastane_Otamasyonu
             bgl.baglanti().Close();
             MessageBox.Show("Doktor Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void BtnListele_Click(object sender, EventArgs e)
+        {
+            DataTable dt1 = new DataTable(); //datatable oluşturduk
+            SqlDataAdapter da1 = new SqlDataAdapter("Select * from Tbl_Duyurular order by Duyuruid desc", bgl.baglanti());
+            da1.Fill(dt1);
+            dataGridView1.DataSource = dt1;
+        }
     }
 }

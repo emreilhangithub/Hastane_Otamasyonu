@@ -44,6 +44,7 @@ namespace Hastane_Otamasyonu
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.BtnSil = new System.Windows.Forms.Button();
             this.BtnGuncelle = new System.Windows.Forms.Button();
+            this.BtnListele = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,7 +117,7 @@ namespace Hastane_Otamasyonu
             // BtnEkle
             // 
             this.BtnEkle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnEkle.Location = new System.Drawing.Point(215, 340);
+            this.BtnEkle.Location = new System.Drawing.Point(337, 339);
             this.BtnEkle.Name = "BtnEkle";
             this.BtnEkle.Size = new System.Drawing.Size(116, 46);
             this.BtnEkle.TabIndex = 55;
@@ -159,7 +160,7 @@ namespace Hastane_Otamasyonu
             // BtnSil
             // 
             this.BtnSil.BackColor = System.Drawing.Color.LightPink;
-            this.BtnSil.Location = new System.Drawing.Point(333, 340);
+            this.BtnSil.Location = new System.Drawing.Point(337, 404);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(116, 46);
             this.BtnSil.TabIndex = 65;
@@ -172,11 +173,22 @@ namespace Hastane_Otamasyonu
             this.BtnGuncelle.BackColor = System.Drawing.Color.GreenYellow;
             this.BtnGuncelle.Location = new System.Drawing.Point(215, 404);
             this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(234, 46);
+            this.BtnGuncelle.Size = new System.Drawing.Size(116, 46);
             this.BtnGuncelle.TabIndex = 66;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = false;
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
+            // 
+            // BtnListele
+            // 
+            this.BtnListele.BackColor = System.Drawing.Color.Yellow;
+            this.BtnListele.Location = new System.Drawing.Point(215, 339);
+            this.BtnListele.Name = "BtnListele";
+            this.BtnListele.Size = new System.Drawing.Size(116, 46);
+            this.BtnListele.TabIndex = 91;
+            this.BtnListele.Text = "Listele";
+            this.BtnListele.UseVisualStyleBackColor = false;
+            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
             // FrmDoktorPaneli
             // 
@@ -185,6 +197,7 @@ namespace Hastane_Otamasyonu
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(1096, 467);
+            this.Controls.Add(this.BtnListele);
             this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.BtnSil);
             this.Controls.Add(this.dataGridView1);
@@ -228,5 +241,6 @@ namespace Hastane_Otamasyonu
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button BtnSil;
         private System.Windows.Forms.Button BtnGuncelle;
+        private System.Windows.Forms.Button BtnListele;
     }
 }

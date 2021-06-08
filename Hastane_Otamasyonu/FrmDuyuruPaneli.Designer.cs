@@ -37,6 +37,7 @@ namespace Hastane_Otamasyonu
             this.Txtid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.RchDuyuru = new System.Windows.Forms.RichTextBox();
+            this.BtnListele = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@ namespace Hastane_Otamasyonu
             this.BtnGuncelle.BackColor = System.Drawing.Color.GreenYellow;
             this.BtnGuncelle.Location = new System.Drawing.Point(165, 268);
             this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(234, 46);
+            this.BtnGuncelle.Size = new System.Drawing.Size(112, 46);
             this.BtnGuncelle.TabIndex = 87;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = false;
@@ -67,9 +68,9 @@ namespace Hastane_Otamasyonu
             // BtnSil
             // 
             this.BtnSil.BackColor = System.Drawing.Color.LightPink;
-            this.BtnSil.Location = new System.Drawing.Point(165, 204);
+            this.BtnSil.Location = new System.Drawing.Point(283, 268);
             this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(234, 46);
+            this.BtnSil.Size = new System.Drawing.Size(116, 46);
             this.BtnSil.TabIndex = 86;
             this.BtnSil.Text = "Sil";
             this.BtnSil.UseVisualStyleBackColor = false;
@@ -86,6 +87,7 @@ namespace Hastane_Otamasyonu
             // 
             // Txtid
             // 
+            this.Txtid.Enabled = false;
             this.Txtid.Location = new System.Drawing.Point(144, 12);
             this.Txtid.Name = "Txtid";
             this.Txtid.Size = new System.Drawing.Size(255, 30);
@@ -108,13 +110,25 @@ namespace Hastane_Otamasyonu
             this.RchDuyuru.TabIndex = 88;
             this.RchDuyuru.Text = "";
             // 
-            // FrmDuyurular
+            // BtnListele
+            // 
+            this.BtnListele.BackColor = System.Drawing.Color.Yellow;
+            this.BtnListele.Location = new System.Drawing.Point(165, 216);
+            this.BtnListele.Name = "BtnListele";
+            this.BtnListele.Size = new System.Drawing.Size(234, 46);
+            this.BtnListele.TabIndex = 89;
+            this.BtnListele.Text = "Listele";
+            this.BtnListele.UseVisualStyleBackColor = false;
+            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
+            // 
+            // FrmDuyuruPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(1078, 326);
+            this.Controls.Add(this.BtnListele);
             this.Controls.Add(this.RchDuyuru);
             this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.BtnSil);
@@ -126,7 +140,7 @@ namespace Hastane_Otamasyonu
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
-            this.Name = "FrmDuyurular";
+            this.Name = "FrmDuyuruPaneli";
             this.Text = "Duyuru Paneli";
             this.Load += new System.EventHandler(this.FrmDuyurular_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -144,5 +158,6 @@ namespace Hastane_Otamasyonu
         private System.Windows.Forms.TextBox Txtid;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox RchDuyuru;
+        private System.Windows.Forms.Button BtnListele;
     }
 }

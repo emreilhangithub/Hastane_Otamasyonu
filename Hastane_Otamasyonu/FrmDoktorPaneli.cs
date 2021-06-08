@@ -91,5 +91,13 @@ namespace Hastane_Otamasyonu
         {
           
         }
+
+        private void BtnListele_Click(object sender, EventArgs e)
+        {
+            DataTable dt1 = new DataTable(); //datatable oluşturduk
+            SqlDataAdapter da1 = new SqlDataAdapter("Select * from Tbl_Doktorlar ", bgl.baglanti());
+            da1.Fill(dt1);
+            dataGridView1.DataSource = dt1;
+        }
     }
 }

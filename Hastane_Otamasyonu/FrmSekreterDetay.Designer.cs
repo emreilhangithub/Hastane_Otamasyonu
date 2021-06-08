@@ -59,6 +59,7 @@ namespace Hastane_Otamasyonu
             this.BtnListe = new System.Windows.Forms.Button();
             this.BtnBransPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
+            this.LblTarih = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -120,6 +121,7 @@ namespace Hastane_Otamasyonu
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.LblTarih);
             this.groupBox2.Controls.Add(this.BtnDuyuruOlustur);
             this.groupBox2.Controls.Add(this.RchDuyuru);
             this.groupBox2.Location = new System.Drawing.Point(12, 118);
@@ -131,9 +133,9 @@ namespace Hastane_Otamasyonu
             // 
             // BtnDuyuruOlustur
             // 
-            this.BtnDuyuruOlustur.Location = new System.Drawing.Point(7, 173);
+            this.BtnDuyuruOlustur.Location = new System.Drawing.Point(7, 191);
             this.BtnDuyuruOlustur.Name = "BtnDuyuruOlustur";
-            this.BtnDuyuruOlustur.Size = new System.Drawing.Size(276, 51);
+            this.BtnDuyuruOlustur.Size = new System.Drawing.Size(276, 33);
             this.BtnDuyuruOlustur.TabIndex = 4;
             this.BtnDuyuruOlustur.Text = "Oluştur";
             this.BtnDuyuruOlustur.UseVisualStyleBackColor = true;
@@ -143,7 +145,7 @@ namespace Hastane_Otamasyonu
             // 
             this.RchDuyuru.Location = new System.Drawing.Point(7, 41);
             this.RchDuyuru.Name = "RchDuyuru";
-            this.RchDuyuru.Size = new System.Drawing.Size(276, 126);
+            this.RchDuyuru.Size = new System.Drawing.Size(276, 114);
             this.RchDuyuru.TabIndex = 3;
             this.RchDuyuru.Text = "";
             // 
@@ -364,6 +366,15 @@ namespace Hastane_Otamasyonu
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
             this.BtnDoktorPanel.Click += new System.EventHandler(this.BtnDoktorPanel_Click);
             // 
+            // LblTarih
+            // 
+            this.LblTarih.AutoSize = true;
+            this.LblTarih.Location = new System.Drawing.Point(6, 158);
+            this.LblTarih.Name = "LblTarih";
+            this.LblTarih.Size = new System.Drawing.Size(56, 23);
+            this.LblTarih.TabIndex = 5;
+            this.LblTarih.Text = "label8";
+            // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -387,6 +398,7 @@ namespace Hastane_Otamasyonu
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -429,5 +441,6 @@ namespace Hastane_Otamasyonu
         private System.Windows.Forms.Button BtnDoktorPanel;
         private System.Windows.Forms.ComboBox CmbDoktor;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label LblTarih;
     }
 }
