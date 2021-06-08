@@ -71,7 +71,7 @@ namespace Hastane_Otamasyonu
             this.LnkBilgiGuncelle.AutoSize = true;
             this.LnkBilgiGuncelle.Location = new System.Drawing.Point(174, 90);
             this.LnkBilgiGuncelle.Name = "LnkBilgiGuncelle";
-            this.LnkBilgiGuncelle.Size = new System.Drawing.Size(113, 23);
+            this.LnkBilgiGuncelle.Size = new System.Drawing.Size(176, 35);
             this.LnkBilgiGuncelle.TabIndex = 39;
             this.LnkBilgiGuncelle.TabStop = true;
             this.LnkBilgiGuncelle.Text = "Bilgi Güncelle";
@@ -82,7 +82,7 @@ namespace Hastane_Otamasyonu
             this.LnkBilgiGoruntule.AutoSize = true;
             this.LnkBilgiGoruntule.Location = new System.Drawing.Point(34, 90);
             this.LnkBilgiGoruntule.Name = "LnkBilgiGoruntule";
-            this.LnkBilgiGoruntule.Size = new System.Drawing.Size(125, 23);
+            this.LnkBilgiGoruntule.Size = new System.Drawing.Size(192, 35);
             this.LnkBilgiGoruntule.TabIndex = 38;
             this.LnkBilgiGoruntule.TabStop = true;
             this.LnkBilgiGoruntule.Text = "Bilgi Görüntüle";
@@ -93,7 +93,7 @@ namespace Hastane_Otamasyonu
             this.LblAdSoyad.AutoSize = true;
             this.LblAdSoyad.Location = new System.Drawing.Point(150, 32);
             this.LblAdSoyad.Name = "LblAdSoyad";
-            this.LblAdSoyad.Size = new System.Drawing.Size(76, 23);
+            this.LblAdSoyad.Size = new System.Drawing.Size(119, 35);
             this.LblAdSoyad.TabIndex = 37;
             this.LblAdSoyad.Text = "Null Null";
             // 
@@ -102,7 +102,7 @@ namespace Hastane_Otamasyonu
             this.LblTc.AutoSize = true;
             this.LblTc.Location = new System.Drawing.Point(150, 55);
             this.LblTc.Name = "LblTc";
-            this.LblTc.Size = new System.Drawing.Size(120, 23);
+            this.LblTc.Size = new System.Drawing.Size(169, 35);
             this.LblTc.TabIndex = 36;
             this.LblTc.Text = "00000000000";
             // 
@@ -111,7 +111,7 @@ namespace Hastane_Otamasyonu
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(50, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 23);
+            this.label4.Size = new System.Drawing.Size(132, 35);
             this.label4.TabIndex = 33;
             this.label4.Text = "Ad Soyad:";
             // 
@@ -120,7 +120,7 @@ namespace Hastane_Otamasyonu
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(22, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 23);
+            this.label1.Size = new System.Drawing.Size(176, 35);
             this.label1.TabIndex = 30;
             this.label1.Text = "TC Kimlik No:";
             // 
@@ -158,11 +158,11 @@ namespace Hastane_Otamasyonu
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 26);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 38);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(816, 399);
+            this.dataGridView1.Size = new System.Drawing.Size(816, 387);
             this.dataGridView1.TabIndex = 41;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -199,7 +199,7 @@ namespace Hastane_Otamasyonu
             // 
             // FrmDoktorDetay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
@@ -215,6 +215,7 @@ namespace Hastane_Otamasyonu
             this.MaximizeBox = false;
             this.Name = "FrmDoktorDetay";
             this.Text = "Doktor Detay";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmDoktorDetay_FormClosing);
             this.Load += new System.EventHandler(this.FrmDoktorDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

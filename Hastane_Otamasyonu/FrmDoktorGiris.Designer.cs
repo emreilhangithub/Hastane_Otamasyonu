@@ -43,7 +43,7 @@ namespace Hastane_Otamasyonu
             this.label4.Font = new System.Drawing.Font("Segoe Script", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(63, 34);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(358, 53);
+            this.label4.Size = new System.Drawing.Size(535, 80);
             this.label4.TabIndex = 28;
             this.label4.Text = "Doktor Giriş Paneli";
             // 
@@ -52,7 +52,7 @@ namespace Hastane_Otamasyonu
             this.MskTc.Location = new System.Drawing.Point(275, 137);
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
-            this.MskTc.Size = new System.Drawing.Size(234, 30);
+            this.MskTc.Size = new System.Drawing.Size(234, 42);
             this.MskTc.TabIndex = 34;
             this.MskTc.Text = "33333333333";
             this.MskTc.UseWaitCursor = true;
@@ -62,7 +62,7 @@ namespace Hastane_Otamasyonu
             // 
             this.TxtSifre.Location = new System.Drawing.Point(275, 207);
             this.TxtSifre.Name = "TxtSifre";
-            this.TxtSifre.Size = new System.Drawing.Size(234, 30);
+            this.TxtSifre.Size = new System.Drawing.Size(234, 42);
             this.TxtSifre.TabIndex = 33;
             this.TxtSifre.Text = "3333";
             this.TxtSifre.UseSystemPasswordChar = true;
@@ -82,7 +82,7 @@ namespace Hastane_Otamasyonu
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(93, 210);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 23);
+            this.label2.Size = new System.Drawing.Size(76, 35);
             this.label2.TabIndex = 31;
             this.label2.Text = "Şifre:";
             // 
@@ -91,13 +91,13 @@ namespace Hastane_Otamasyonu
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(93, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 23);
+            this.label1.Size = new System.Drawing.Size(176, 35);
             this.label1.TabIndex = 30;
             this.label1.Text = "TC Kimlik No:";
             // 
             // FrmDoktorGiris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -113,6 +113,7 @@ namespace Hastane_Otamasyonu
             this.MaximizeBox = false;
             this.Name = "FrmDoktorGiris";
             this.Text = "Doktor Giriş";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmDoktorGiris_FormClosing);
             this.Load += new System.EventHandler(this.FrmDoktorGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

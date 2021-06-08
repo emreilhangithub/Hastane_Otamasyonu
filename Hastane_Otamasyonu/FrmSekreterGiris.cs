@@ -40,5 +40,33 @@ namespace Hastane_Otamasyonu
             }
             bgl.baglanti().Close();
         }
+
+        private void FrmSekreterGiris_FormClosed(object sender, FormClosedEventArgs e)
+        {
+           
+        }
+
+        private void FrmSekreterGiris_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                if (MessageBox.Show("Kapatmak İstediginizden Emin Misiniz ?", "Bti Danışmanlık Hospital",
+         MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                    return;
+                }
+                Application.Exit();
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
+
+        private void FrmSekreterGiris_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

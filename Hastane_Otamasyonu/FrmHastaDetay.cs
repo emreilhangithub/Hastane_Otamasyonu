@@ -108,5 +108,23 @@ namespace Hastane_Otamasyonu
             fr.Tc = LblTc.Text;
             fr.Show();
         }
+
+        private void FrmHastaDetay_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                if (MessageBox.Show("Kapatmak İstediginizden Emin Misiniz ?", "Bti Danışmanlık Hospital",
+         MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                    return;
+                }
+                Application.Exit();
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
     }
 }
