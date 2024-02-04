@@ -47,14 +47,14 @@ namespace Hastane_Otamasyonu
             // 
             this.TxtSifre.Location = new System.Drawing.Point(224, 263);
             this.TxtSifre.Name = "TxtSifre";
-            this.TxtSifre.Size = new System.Drawing.Size(234, 30);
+            this.TxtSifre.Size = new System.Drawing.Size(234, 42);
             this.TxtSifre.TabIndex = 50;
             // 
             // TxtSoyad
             // 
             this.TxtSoyad.Location = new System.Drawing.Point(224, 74);
             this.TxtSoyad.Name = "TxtSoyad";
-            this.TxtSoyad.Size = new System.Drawing.Size(234, 30);
+            this.TxtSoyad.Size = new System.Drawing.Size(234, 42);
             this.TxtSoyad.TabIndex = 49;
             // 
             // label4
@@ -62,7 +62,7 @@ namespace Hastane_Otamasyonu
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(113, 78);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 23);
+            this.label4.Size = new System.Drawing.Size(94, 35);
             this.label4.TabIndex = 48;
             this.label4.Text = "Soyad:";
             // 
@@ -70,7 +70,7 @@ namespace Hastane_Otamasyonu
             // 
             this.TxtAd.Location = new System.Drawing.Point(224, 13);
             this.TxtAd.Name = "TxtAd";
-            this.TxtAd.Size = new System.Drawing.Size(234, 30);
+            this.TxtAd.Size = new System.Drawing.Size(234, 42);
             this.TxtAd.TabIndex = 47;
             // 
             // label3
@@ -78,7 +78,7 @@ namespace Hastane_Otamasyonu
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(139, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 23);
+            this.label3.Size = new System.Drawing.Size(55, 35);
             this.label3.TabIndex = 46;
             this.label3.Text = "Ad:";
             // 
@@ -88,7 +88,7 @@ namespace Hastane_Otamasyonu
             this.MskTc.Location = new System.Drawing.Point(224, 135);
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
-            this.MskTc.Size = new System.Drawing.Size(234, 30);
+            this.MskTc.Size = new System.Drawing.Size(234, 42);
             this.MskTc.TabIndex = 45;
             this.MskTc.ValidatingType = typeof(int);
             // 
@@ -108,7 +108,7 @@ namespace Hastane_Otamasyonu
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(126, 270);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 23);
+            this.label2.Size = new System.Drawing.Size(76, 35);
             this.label2.TabIndex = 43;
             this.label2.Text = "Şifre:";
             // 
@@ -117,7 +117,7 @@ namespace Hastane_Otamasyonu
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(59, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 23);
+            this.label1.Size = new System.Drawing.Size(176, 35);
             this.label1.TabIndex = 42;
             this.label1.Text = "TC Kimlik No:";
             // 
@@ -126,7 +126,7 @@ namespace Hastane_Otamasyonu
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(117, 202);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 23);
+            this.label5.Size = new System.Drawing.Size(88, 35);
             this.label5.TabIndex = 52;
             this.label5.Text = "Branş:";
             // 
@@ -135,13 +135,13 @@ namespace Hastane_Otamasyonu
             this.CmbBrans.FormattingEnabled = true;
             this.CmbBrans.Location = new System.Drawing.Point(224, 202);
             this.CmbBrans.Name = "CmbBrans";
-            this.CmbBrans.Size = new System.Drawing.Size(234, 31);
+            this.CmbBrans.Size = new System.Drawing.Size(234, 43);
             this.CmbBrans.TabIndex = 51;
             this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.CmbBrans_SelectedIndexChanged);
             // 
             // FrmDoktorDuzenle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;

@@ -81,7 +81,7 @@ namespace Hastane_Otamasyonu
             // 
             this.TxtAd.Location = new System.Drawing.Point(210, 109);
             this.TxtAd.Name = "TxtAd";
-            this.TxtAd.Size = new System.Drawing.Size(234, 30);
+            this.TxtAd.Size = new System.Drawing.Size(234, 42);
             this.TxtAd.TabIndex = 74;
             // 
             // label4
@@ -89,7 +89,7 @@ namespace Hastane_Otamasyonu
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(60, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 23);
+            this.label4.Size = new System.Drawing.Size(126, 35);
             this.label4.TabIndex = 73;
             this.label4.Text = "Brans Ad:";
             // 
@@ -98,7 +98,7 @@ namespace Hastane_Otamasyonu
             this.Txtid.Enabled = false;
             this.Txtid.Location = new System.Drawing.Point(210, 48);
             this.Txtid.Name = "Txtid";
-            this.Txtid.Size = new System.Drawing.Size(234, 30);
+            this.Txtid.Size = new System.Drawing.Size(234, 42);
             this.Txtid.TabIndex = 72;
             // 
             // label3
@@ -106,7 +106,7 @@ namespace Hastane_Otamasyonu
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(70, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 23);
+            this.label3.Size = new System.Drawing.Size(116, 35);
             this.label3.TabIndex = 71;
             this.label3.Text = "Brans İd:";
             // 
@@ -134,7 +134,7 @@ namespace Hastane_Otamasyonu
             // 
             // FrmBransPaneli
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;

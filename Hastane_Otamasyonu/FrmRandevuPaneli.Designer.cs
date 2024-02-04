@@ -34,6 +34,7 @@ namespace Hastane_Otamasyonu
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnListele = new System.Windows.Forms.Button();
             this.MskTc = new System.Windows.Forms.MaskedTextBox();
             this.CmbDurum = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@ namespace Hastane_Otamasyonu
             this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnSil = new System.Windows.Forms.Button();
-            this.BtnListele = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -64,11 +64,11 @@ namespace Hastane_Otamasyonu
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 26);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 38);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(703, 416);
+            this.dataGridView1.Size = new System.Drawing.Size(703, 404);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -112,12 +112,23 @@ namespace Hastane_Otamasyonu
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Bilgileri";
             // 
+            // BtnListele
+            // 
+            this.BtnListele.BackColor = System.Drawing.Color.Yellow;
+            this.BtnListele.Location = new System.Drawing.Point(79, 387);
+            this.BtnListele.Name = "BtnListele";
+            this.BtnListele.Size = new System.Drawing.Size(98, 46);
+            this.BtnListele.TabIndex = 147;
+            this.BtnListele.Text = "Listele";
+            this.BtnListele.UseVisualStyleBackColor = false;
+            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
+            // 
             // MskTc
             // 
             this.MskTc.Location = new System.Drawing.Point(211, 254);
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
-            this.MskTc.Size = new System.Drawing.Size(195, 30);
+            this.MskTc.Size = new System.Drawing.Size(195, 42);
             this.MskTc.TabIndex = 146;
             this.MskTc.ValidatingType = typeof(int);
             // 
@@ -126,7 +137,7 @@ namespace Hastane_Otamasyonu
             this.CmbDurum.FormattingEnabled = true;
             this.CmbDurum.Location = new System.Drawing.Point(212, 216);
             this.CmbDurum.Name = "CmbDurum";
-            this.CmbDurum.Size = new System.Drawing.Size(194, 31);
+            this.CmbDurum.Size = new System.Drawing.Size(194, 43);
             this.CmbDurum.TabIndex = 145;
             // 
             // label8
@@ -134,7 +145,7 @@ namespace Hastane_Otamasyonu
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(123, 257);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 23);
+            this.label8.Size = new System.Drawing.Size(48, 35);
             this.label8.TabIndex = 144;
             this.label8.Text = "Tc:";
             // 
@@ -143,7 +154,7 @@ namespace Hastane_Otamasyonu
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(86, 219);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 23);
+            this.label7.Size = new System.Drawing.Size(103, 35);
             this.label7.TabIndex = 143;
             this.label7.Text = "Durum:";
             // 
@@ -152,7 +163,7 @@ namespace Hastane_Otamasyonu
             this.MskSaat.Location = new System.Drawing.Point(212, 103);
             this.MskSaat.Mask = "00:00";
             this.MskSaat.Name = "MskSaat";
-            this.MskSaat.Size = new System.Drawing.Size(194, 30);
+            this.MskSaat.Size = new System.Drawing.Size(194, 42);
             this.MskSaat.TabIndex = 142;
             this.MskSaat.ValidatingType = typeof(System.DateTime);
             // 
@@ -161,7 +172,7 @@ namespace Hastane_Otamasyonu
             this.MskTarih.Location = new System.Drawing.Point(212, 66);
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
-            this.MskTarih.Size = new System.Drawing.Size(194, 30);
+            this.MskTarih.Size = new System.Drawing.Size(194, 42);
             this.MskTarih.TabIndex = 141;
             this.MskTarih.ValidatingType = typeof(System.DateTime);
             // 
@@ -170,7 +181,7 @@ namespace Hastane_Otamasyonu
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(106, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 23);
+            this.label1.Size = new System.Drawing.Size(75, 35);
             this.label1.TabIndex = 140;
             this.label1.Text = "Saat:";
             // 
@@ -179,7 +190,7 @@ namespace Hastane_Otamasyonu
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(102, 67);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 23);
+            this.label4.Size = new System.Drawing.Size(81, 35);
             this.label4.TabIndex = 139;
             this.label4.Text = "Tarih:";
             // 
@@ -188,7 +199,7 @@ namespace Hastane_Otamasyonu
             this.txtid.Enabled = false;
             this.txtid.Location = new System.Drawing.Point(212, 29);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(194, 30);
+            this.txtid.Size = new System.Drawing.Size(194, 42);
             this.txtid.TabIndex = 138;
             // 
             // label3
@@ -196,7 +207,7 @@ namespace Hastane_Otamasyonu
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(55, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 23);
+            this.label3.Size = new System.Drawing.Size(153, 35);
             this.label3.TabIndex = 137;
             this.label3.Text = "Randevu id:";
             // 
@@ -205,7 +216,7 @@ namespace Hastane_Otamasyonu
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(84, 295);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 23);
+            this.label6.Size = new System.Drawing.Size(109, 35);
             this.label6.TabIndex = 136;
             this.label6.Text = "Şikayet:";
             // 
@@ -214,7 +225,7 @@ namespace Hastane_Otamasyonu
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(86, 181);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 23);
+            this.label5.Size = new System.Drawing.Size(104, 35);
             this.label5.TabIndex = 135;
             this.label5.Text = "Doktor:";
             // 
@@ -223,7 +234,7 @@ namespace Hastane_Otamasyonu
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(97, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 23);
+            this.label2.Size = new System.Drawing.Size(88, 35);
             this.label2.TabIndex = 134;
             this.label2.Text = "Branş:";
             // 
@@ -241,7 +252,7 @@ namespace Hastane_Otamasyonu
             this.CmbDoktor.FormattingEnabled = true;
             this.CmbDoktor.Location = new System.Drawing.Point(212, 178);
             this.CmbDoktor.Name = "CmbDoktor";
-            this.CmbDoktor.Size = new System.Drawing.Size(194, 31);
+            this.CmbDoktor.Size = new System.Drawing.Size(194, 43);
             this.CmbDoktor.TabIndex = 132;
             // 
             // CmbBrans
@@ -250,7 +261,7 @@ namespace Hastane_Otamasyonu
             this.CmbBrans.FormattingEnabled = true;
             this.CmbBrans.Location = new System.Drawing.Point(211, 140);
             this.CmbBrans.Name = "CmbBrans";
-            this.CmbBrans.Size = new System.Drawing.Size(195, 31);
+            this.CmbBrans.Size = new System.Drawing.Size(195, 43);
             this.CmbBrans.TabIndex = 131;
             this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.CmbBrans_SelectedIndexChanged);
             // 
@@ -275,20 +286,9 @@ namespace Hastane_Otamasyonu
             this.BtnSil.Text = "Sil";
             this.BtnSil.UseVisualStyleBackColor = false;
             // 
-            // BtnListele
-            // 
-            this.BtnListele.BackColor = System.Drawing.Color.Yellow;
-            this.BtnListele.Location = new System.Drawing.Point(79, 387);
-            this.BtnListele.Name = "BtnListele";
-            this.BtnListele.Size = new System.Drawing.Size(98, 46);
-            this.BtnListele.TabIndex = 147;
-            this.BtnListele.Text = "Listele";
-            this.BtnListele.UseVisualStyleBackColor = false;
-            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
-            // 
             // FrmRandevuPaneli
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(1165, 460);

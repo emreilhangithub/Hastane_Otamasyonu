@@ -50,7 +50,7 @@ namespace Hastane_Otamasyonu
             // 
             // FrmDuyurular
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -58,7 +58,7 @@ namespace Hastane_Otamasyonu
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Corbel", 14F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.Name = "FrmDuyurular";
             this.Text = "Duyurular";

@@ -47,7 +47,7 @@ namespace Hastane_Otamasyonu
             this.LblSifre.AutoSize = true;
             this.LblSifre.Location = new System.Drawing.Point(172, 267);
             this.LblSifre.Name = "LblSifre";
-            this.LblSifre.Size = new System.Drawing.Size(64, 23);
+            this.LblSifre.Size = new System.Drawing.Size(98, 35);
             this.LblSifre.TabIndex = 71;
             this.LblSifre.Text = "label11";
             // 
@@ -56,7 +56,7 @@ namespace Hastane_Otamasyonu
             this.LblBrans.AutoSize = true;
             this.LblBrans.Location = new System.Drawing.Point(171, 205);
             this.LblBrans.Name = "LblBrans";
-            this.LblBrans.Size = new System.Drawing.Size(65, 23);
+            this.LblBrans.Size = new System.Drawing.Size(99, 35);
             this.LblBrans.TabIndex = 70;
             this.LblBrans.Text = "label10";
             // 
@@ -65,7 +65,7 @@ namespace Hastane_Otamasyonu
             this.LblTc.AutoSize = true;
             this.LblTc.Location = new System.Drawing.Point(171, 143);
             this.LblTc.Name = "LblTc";
-            this.LblTc.Size = new System.Drawing.Size(56, 23);
+            this.LblTc.Size = new System.Drawing.Size(87, 35);
             this.LblTc.TabIndex = 69;
             this.LblTc.Text = "label9";
             // 
@@ -74,7 +74,7 @@ namespace Hastane_Otamasyonu
             this.LblSoyad.AutoSize = true;
             this.LblSoyad.Location = new System.Drawing.Point(171, 81);
             this.LblSoyad.Name = "LblSoyad";
-            this.LblSoyad.Size = new System.Drawing.Size(56, 23);
+            this.LblSoyad.Size = new System.Drawing.Size(86, 35);
             this.LblSoyad.TabIndex = 68;
             this.LblSoyad.Text = "label8";
             // 
@@ -83,7 +83,7 @@ namespace Hastane_Otamasyonu
             this.LblAd.AutoSize = true;
             this.LblAd.Location = new System.Drawing.Point(171, 19);
             this.LblAd.Name = "LblAd";
-            this.LblAd.Size = new System.Drawing.Size(54, 23);
+            this.LblAd.Size = new System.Drawing.Size(84, 35);
             this.LblAd.TabIndex = 67;
             this.LblAd.Text = "label7";
             // 
@@ -92,7 +92,7 @@ namespace Hastane_Otamasyonu
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(63, 205);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 23);
+            this.label5.Size = new System.Drawing.Size(81, 35);
             this.label5.TabIndex = 65;
             this.label5.Text = "Brans";
             // 
@@ -101,7 +101,7 @@ namespace Hastane_Otamasyonu
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(68, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 23);
+            this.label4.Size = new System.Drawing.Size(94, 35);
             this.label4.TabIndex = 64;
             this.label4.Text = "Soyad:";
             // 
@@ -110,7 +110,7 @@ namespace Hastane_Otamasyonu
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(94, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 23);
+            this.label3.Size = new System.Drawing.Size(55, 35);
             this.label3.TabIndex = 63;
             this.label3.Text = "Ad:";
             // 
@@ -119,7 +119,7 @@ namespace Hastane_Otamasyonu
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(81, 267);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 23);
+            this.label2.Size = new System.Drawing.Size(76, 35);
             this.label2.TabIndex = 62;
             this.label2.Text = "Şifre:";
             // 
@@ -128,13 +128,13 @@ namespace Hastane_Otamasyonu
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(14, 143);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 23);
+            this.label1.Size = new System.Drawing.Size(176, 35);
             this.label1.TabIndex = 61;
             this.label1.Text = "TC Kimlik No:";
             // 
             // FrmDoktorGoruntule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;

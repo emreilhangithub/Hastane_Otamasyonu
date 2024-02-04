@@ -29,6 +29,7 @@ namespace Hastane_Otamasyonu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoktorGiris));
             this.label4 = new System.Windows.Forms.Label();
             this.MskTc = new System.Windows.Forms.MaskedTextBox();
             this.TxtSifre = new System.Windows.Forms.MaskedTextBox();
@@ -109,6 +110,7 @@ namespace Hastane_Otamasyonu
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Font = new System.Drawing.Font("Corbel", 14F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.Name = "FrmDoktorGiris";

@@ -81,7 +81,7 @@ namespace Hastane_Otamasyonu
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(45, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 23);
+            this.label4.Size = new System.Drawing.Size(108, 35);
             this.label4.TabIndex = 84;
             this.label4.Text = "Duyuru:";
             // 
@@ -90,7 +90,7 @@ namespace Hastane_Otamasyonu
             this.Txtid.Enabled = false;
             this.Txtid.Location = new System.Drawing.Point(144, 12);
             this.Txtid.Name = "Txtid";
-            this.Txtid.Size = new System.Drawing.Size(255, 30);
+            this.Txtid.Size = new System.Drawing.Size(255, 42);
             this.Txtid.TabIndex = 83;
             // 
             // label3
@@ -98,7 +98,7 @@ namespace Hastane_Otamasyonu
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(26, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 23);
+            this.label3.Size = new System.Drawing.Size(136, 35);
             this.label3.TabIndex = 82;
             this.label3.Text = "Duyuru İd:";
             // 
@@ -123,7 +123,7 @@ namespace Hastane_Otamasyonu
             // 
             // FrmDuyuruPaneli
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
