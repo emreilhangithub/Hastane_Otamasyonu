@@ -2,7 +2,7 @@
 
 ## Proje Tanıtımı 
 
-*Bu projede **.Net** kullanarak hastana otomasyonu masaüstü uygulaması oluşturdum. CRUD operasyonları için ado.net disconnect mimari kullanıldım. *
+*Bu projede **.Net** kullanarak hastana otomasyonu masaüstü uygulaması oluşturdum. CRUD operasyonları için ado.net disconnect mimari kullanıldım.*
 
 # Database Yedeği #
 Databse kısmına aşşağıdan ulaşıp kendinize yükleyebilirsiniz. https://github.com/emreilhangithub/Hastane_Otamasyonu/tree/master/database
