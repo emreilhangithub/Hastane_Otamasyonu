@@ -69,6 +69,7 @@ Sekreter önemli duyuruları burada oluşturabilir.
 
 ### Sekreter Doktor Randevu Oluşturma
 Sekreter buradan doktor adına randevu oluşturabiliyor yani doktorun çalışma saatlerini belirliyor sonradan hastalar kendi ekranlarından bu randevulara kayıt olabiliyorlar.
+![SekreterDoktorRandevuOlusturma](https://github.com/emreilhangithub/Hastane_Otamasyonu/blob/master/images/SekreterDoktorRandevuOlusturma.png)
 
 ### Sekreter Branslar ve Doktor Görüntüleme
 Sekreter bu ekranda sistemde var olan kayıtlı branşları ve doktorları görüntüleyebilir.
