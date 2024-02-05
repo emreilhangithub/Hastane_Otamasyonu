@@ -24,10 +24,14 @@ Hasta bu ekranda daha önce oluştduğu kendine ait randevuları görüntüleyeb
 
 ### Hasta Bilgi Goruntule
 Hasta bu ekranda kendi bilgilerini detaylı bir şekilde görebilir.
+
+
 ![HastaBilgiGoruntule](https://github.com/emreilhangithub/Hastane_Otamasyonu/blob/master/images/HastaBilgiGoruntule.png)
 
 ### Hasta Bilgi Guncelleme
 Hasta bu ekranda kendi bilgilerini güncelleyebilir.
+
+
 ![HastaBilgiGuncelle](https://github.com/emreilhangithub/Hastane_Otamasyonu/blob/master/images/HastaBilgiGuncelle.png)
 
 ### Hasta Randevu Alma
@@ -45,6 +49,8 @@ Doktor bu ekranda kendi bilgilerini ve kendisi adına oluşturmuş mesai(randevu
 
 ### Doktor Bilgi Goruntule
 Doktor bu ekranda kendi bilgilerini detaylı bir şekilde görebilir.
+
+
 ![DoktorBilgiGoruntule](https://github.com/emreilhangithub/Hastane_Otamasyonu/blob/master/images/DoktorBilgiGoruntule.png)
 
 ### Doktor Bilgi Guncelleme
@@ -65,6 +71,8 @@ Sekreter bu ekranda kendi bilgilerini görebilir vede ekleme,güncelleme,silme i
 
 ### Sekreter Duyuru Oluşturma
 Sekreter önemli duyuruları burada oluşturabilir.
+
+
 ![SekreterDuyuruOlustur](https://github.com/emreilhangithub/Hastane_Otamasyonu/blob/master/images/SekreterDuyuruOlustur.png)
 
 ### Sekreter Doktor Randevu Oluşturma
